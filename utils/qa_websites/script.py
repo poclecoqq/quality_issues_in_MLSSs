@@ -6,6 +6,7 @@ from typing import Dict, List
 import requests
 import json
 import pickle
+from time import sleep
 
 PATH = Path(__file__).parent.resolve()
 DATA_PATH = Path(PATH, 'data')
@@ -37,6 +38,8 @@ def get_top_users_id(website: List, tags: List, n_results=100, verbose=False) ->
             for period in ['all_time', 'month']:
                 url = f'https://api.stackexchange.com/2.3/tags/{tag}/{user_category}/{period}'
                 res = requests.get(url, params=params)
+                # To avoid hitting Stack Exchange's throttling limits
+                sleep(1)
                 parsed_response = json.loads(res.text)
                 # Print if verbose
                 if verbose:
