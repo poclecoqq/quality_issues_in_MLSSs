@@ -79,5 +79,6 @@ def save_to_csv(file_name, d):
             web_handles_f.append(web_handle)
     df = pd.DataFrame({'website': websites, 'user_category': user_categories,
                       'period': periods, 'tag': tags, 'web_handle': web_handles_f})
+    df = df.drop_duplicates(subset=['web_handle'])
     f_path = Path(DATA_PATH, file_name)
     df.to_csv(f_path, index=False)
