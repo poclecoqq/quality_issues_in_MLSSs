@@ -7,17 +7,18 @@ import requests
 import json
 import pickle
 from time import sleep
+import pandas as pd
 
 PATH = Path(__file__).parent.resolve()
 DATA_PATH = Path(PATH, 'data')
 os.makedirs(DATA_PATH, exist_ok=True)
 
 
-def get_key(tag, user_category, period):
-    return f'{tag}-{user_category}-{period}'
+def get_key(website, user_category="", period="", tag=""):
+    return ' '.join([website, user_category, period, tag])
 
 
-def get_top_users_id(website: List, tags: List, n_results=100, verbose=False) -> Dict:
+def get_top_users_id_per_tag(website: str, tags: List, n_results=100, verbose=False) -> Dict:
     """
     Gets top users' id for a set of tags for a given website.
     Top users a fetched from two categories: "all_time" and "month".
@@ -55,12 +56,159 @@ def get_top_users_id(website: List, tags: List, n_results=100, verbose=False) ->
     return ans
 
 
+def split_list(l: List, size) -> List:
+    """
+    Split a list in a list of list of max length "size"
+    Input:
+        l: the list too be splitted
+        size: the max size
+    Output:
+        ans: ...
+    """
+    i = 0
+    ans = []
+    while i < len(l):
+        ans.append(l[i:i+size])
+        i += size
+    return ans
+
+
+def get_users_web_handles(website: str, ids: List, n_results=100, verbose=False) -> List:
+    """
+    Given a list of user ids, fetches user handles
+    """
+    base_url = 'https://api.stackexchange.com/2.3/users/'
+    params = {'pagesize': n_results, 'site': website}
+    splitted_ids = split_list(ids, size=100)
+    user_handles = []
+    for s_ids in splitted_ids:
+        s_ids = list(map(str, s_ids))
+        joined_ids = ';'.join(s_ids)
+        url = base_url + joined_ids
+        res = requests.get(url, params=params)
+        sleep(1)
+        parsed_response = json.loads(res.text)
+        # Extract the users id from the results
+        for user in parsed_response['items']:
+            if 'website_url' in user and len(user['website_url']) > 0:
+                user_handles.append(user['website_url'])
+    if verbose:
+        n_user_ids = len(ids)
+        n_user_handles = len(user_handles)
+        print(
+            f'Fetched {n_user_handles} user handles from {n_user_ids} user ids from {website}.')
+    return user_handles
+
+
+def get_top_users_web_handles(website: str, n_results=100, verbose=False) -> List:
+    """
+    Fetches the web handle of top users of a platform.
+    Input:
+        website: The website
+        n_results: 
+        verbose: 
+    Output:
+        user_handles: A list of user handles        
+    """
+    url = 'https://api.stackexchange.com/2.3/users'
+    params = {'pagesize': n_results, 'site': website}
+    res = requests.get(url, params=params)
+    sleep(1)
+    parsed_response = json.loads(res.text)
+    if verbose:
+        n_users = len(parsed_response['items'])
+        print(f'Fetched {n_users} users from "{website}"')
+    # Extract the users id from the results
+    user_handles = []
+    for user in parsed_response['items']:
+        if 'website_url' in user and len(user['website_url']) > 0:
+            user_handles.append(user['website_url'])
+    return user_handles
+
+
+def get_web_handles_datascience_stack_exchange(ans: Dict) -> Dict:
+    """
+    Fetches web handles from datascience stack exchange.
+    Input:
+        ans: The dict where the answer will be saved
+    Output:
+        ans: The same dict as given in input, but with data saved in it
+    """
+    website = 'datascience'
+    website_handles = get_top_users_web_handles(website=website, verbose=True)
+    k = get_key(website)
+    ans[k] = website_handles
+    return ans
+
+
+def get_web_handles_datascience_stack_overflow(ans: Dict, use_cached_user_ids=False) -> Dict:
+    """
+    Fetches web handles from stackoverflow.
+    First it searches top users per tags.
+    Second it fetches the web handle of these users.
+    Input:
+        ans: The dict where the answer will be saved
+    Output:
+        ans: The same dict as given in input, but with data saved in it
+    """
+    website = 'stackoverflow'
+    f_cached_name = 'SO-user-ids.bin'
+    # 1. Fetch user ids if not using cached ones (if existing)
+    if not use_cached_user_ids:
+        tags = ['machine-learning', 'data-cleaning',
+                'dataset', 'artificial-intelligence']
+        # Get the top users for each tag
+        users_id = get_top_users_id_per_tag(
+            website=website, tags=tags, verbose=True)
+        save_file(f_cached_name, users_id)
+    else:
+        users_id = load_file(f_cached_name)
+
+    # 2. Fetch the web handles of these users
+    for key, _users_id in users_id.items():
+        website_handles = get_users_web_handles(website=website, ids=_users_id)
+        ans[key] = website_handles
+    return ans
+
+
+def save_file(file_name, obj):
+    f_path = Path(DATA_PATH, file_name)
+    with open(f_path, "wb") as f:
+        pickle.dump(obj, f)
+
+
+def load_file(file_name):
+    f_path = Path(DATA_PATH, file_name)
+    with open(f_path, "rb") as f:
+        obj = pickle.load(f)
+    return obj
+
+
+def save_to_csv(file_name, d):
+    """
+    Save to csv the results of the script that
+    are saved in a dict. It expects the dict's keys
+    to follow 'get_key' function's nomenclature.
+    """
+    websites, user_categories, periods, tags, web_handles_f = [], [], [], [], []
+    for key, web_handles in d.items():
+        website, user_category, period, tag = key.split(' ')
+        for web_handle in web_handles:
+            websites.append(website)
+            user_categories.append(user_category)
+            periods.append(period)
+            tags.append(tag)
+            web_handles_f.append(web_handle)
+    df = pd.DataFrame({'website': websites, 'user_category': user_categories,
+                      'period': periods, 'tag': tags, 'web_handle': web_handles_f})
+    f_path = Path(DATA_PATH, file_name)
+    df.to_csv(f_path, index=False)
+
+
 if __name__ == "__main__":
-    website = 'stackoverflow'  # 'datascience'
-    tags = ['machine-learning']
-    users_id = get_top_users_id(website, tags, verbose=True)
-    with open("state.bin", "wb") as f:
-        pickle.dump(users_id, f)
-    with open(Path("state.bin"), "rb") as f:  # "rb" because we want to read in binary mode
-        state = pickle.load(f)
-    print(state)
+    # ans = {}
+    # ans = get_web_handles_datascience_stack_overflow(ans)
+    # ans = get_web_handles_datascience_stack_exchange(ans)
+    # save_file('tmp_final.bin', ans)
+    ans = load_file('tmp_final.bin')
+    save_to_csv('final.csv', ans)
