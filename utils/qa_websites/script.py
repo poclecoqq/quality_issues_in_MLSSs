@@ -1,21 +1,11 @@
-from collections import defaultdict
-from copyreg import pickle
-from pathlib import Path
-import os
 from typing import Dict, List
 import requests
 import json
-import pickle
 from time import sleep
-import pandas as pd
 
-PATH = Path(__file__).parent.resolve()
-DATA_PATH = Path(PATH, 'data')
-os.makedirs(DATA_PATH, exist_ok=True)
+from utils import init_logger, get_key, save_file, save_to_csv, load_file
 
-
-def get_key(website, user_category="", period="", tag=""):
-    return ' '.join([website, user_category, period, tag])
+logger = init_logger()
 
 
 def get_top_users_id_per_tag(website: str, tags: List, n_results=100, verbose=False) -> Dict:
@@ -33,7 +23,8 @@ def get_top_users_id_per_tag(website: str, tags: List, n_results=100, verbose=Fa
     ans = {}
     for tag in tags:
         if verbose:
-            print(f'Fetching top users on "{website}" for the tag "{tag}."')
+            logger.info(
+                f'Fetching top users on "{website}" for the tag "{tag}."')
         params = {'pagesize': n_results, 'site': website}
         for user_category in ['top-askers', 'top-answerers']:
             for period in ['all_time', 'month']:
@@ -42,10 +33,10 @@ def get_top_users_id_per_tag(website: str, tags: List, n_results=100, verbose=Fa
                 # To avoid hitting Stack Exchange's throttling limits
                 sleep(1)
                 parsed_response = json.loads(res.text)
-                # Print if verbose
+                # logger.info if verbose
                 if verbose:
                     n_users = len(parsed_response['items'])
-                    print(
+                    logger.info(
                         f'\t{user_category}-{period} number of users: {n_users}')
                 # Extract the users id from the results
                 user_ids = []
@@ -95,7 +86,7 @@ def get_users_web_handles(website: str, ids: List, n_results=100, verbose=False)
     if verbose:
         n_user_ids = len(ids)
         n_user_handles = len(user_handles)
-        print(
+        logger.info(
             f'Fetched {n_user_handles} user handles from {n_user_ids} user ids from {website}.')
     return user_handles
 
@@ -115,14 +106,19 @@ def get_top_users_web_handles(website: str, n_results=100, verbose=False) -> Lis
     res = requests.get(url, params=params)
     sleep(1)
     parsed_response = json.loads(res.text)
-    if verbose:
-        n_users = len(parsed_response['items'])
-        print(f'Fetched {n_users} users from "{website}"')
+
     # Extract the users id from the results
     user_handles = []
     for user in parsed_response['items']:
         if 'website_url' in user and len(user['website_url']) > 0:
             user_handles.append(user['website_url'])
+
+    if verbose:
+        n_user_ids = len(parsed_response['items'])
+        n_user_handles = len(user_handles)
+        logger.info(
+            f'Fetched {n_user_handles} user handles from {n_user_ids} user ids from {website}.')
+
     return user_handles
 
 
@@ -134,8 +130,12 @@ def get_web_handles_datascience_stack_exchange(ans: Dict) -> Dict:
     Output:
         ans: The same dict as given in input, but with data saved in it
     """
+    verbose = True
+    if verbose:
+        logger.info("\n----------- Data Science Stack Exchange -----------")
     website = 'datascience'
-    website_handles = get_top_users_web_handles(website=website, verbose=True)
+    website_handles = get_top_users_web_handles(
+        website=website, verbose=verbose)
     k = get_key(website)
     ans[k] = website_handles
     return ans
@@ -151,6 +151,9 @@ def get_web_handles_datascience_stack_overflow(ans: Dict, use_cached_user_ids=Fa
     Output:
         ans: The same dict as given in input, but with data saved in it
     """
+    verbose = True
+    if verbose:
+        logger.info("\n----------- Stack Overflow -----------")
     website = 'stackoverflow'
     f_cached_name = 'SO-user-ids.bin'
     # 1. Fetch user ids if not using cached ones (if existing)
@@ -159,56 +162,26 @@ def get_web_handles_datascience_stack_overflow(ans: Dict, use_cached_user_ids=Fa
                 'dataset', 'artificial-intelligence']
         # Get the top users for each tag
         users_id = get_top_users_id_per_tag(
-            website=website, tags=tags, verbose=True)
+            website=website, tags=tags, verbose=verbose)
         save_file(f_cached_name, users_id)
     else:
         users_id = load_file(f_cached_name)
 
     # 2. Fetch the web handles of these users
     for key, _users_id in users_id.items():
-        website_handles = get_users_web_handles(website=website, ids=_users_id)
+        if verbose:
+            logger.terminator = ":\t"
+            logger.info(key)
+            logger.terminator = "\n"
+        website_handles = get_users_web_handles(
+            website=website, ids=_users_id, verbose=verbose)
         ans[key] = website_handles
     return ans
 
 
-def save_file(file_name, obj):
-    f_path = Path(DATA_PATH, file_name)
-    with open(f_path, "wb") as f:
-        pickle.dump(obj, f)
-
-
-def load_file(file_name):
-    f_path = Path(DATA_PATH, file_name)
-    with open(f_path, "rb") as f:
-        obj = pickle.load(f)
-    return obj
-
-
-def save_to_csv(file_name, d):
-    """
-    Save to csv the results of the script that
-    are saved in a dict. It expects the dict's keys
-    to follow 'get_key' function's nomenclature.
-    """
-    websites, user_categories, periods, tags, web_handles_f = [], [], [], [], []
-    for key, web_handles in d.items():
-        website, user_category, period, tag = key.split(' ')
-        for web_handle in web_handles:
-            websites.append(website)
-            user_categories.append(user_category)
-            periods.append(period)
-            tags.append(tag)
-            web_handles_f.append(web_handle)
-    df = pd.DataFrame({'website': websites, 'user_category': user_categories,
-                      'period': periods, 'tag': tags, 'web_handle': web_handles_f})
-    f_path = Path(DATA_PATH, file_name)
-    df.to_csv(f_path, index=False)
-
-
 if __name__ == "__main__":
-    # ans = {}
-    # ans = get_web_handles_datascience_stack_overflow(ans)
-    # ans = get_web_handles_datascience_stack_exchange(ans)
-    # save_file('tmp_final.bin', ans)
-    ans = load_file('tmp_final.bin')
+    ans = {}
+    ans = get_web_handles_datascience_stack_overflow(ans)
+    save_file('tmp_final.bin', ans)
+    ans = get_web_handles_datascience_stack_exchange(ans)
     save_to_csv('final.csv', ans)
