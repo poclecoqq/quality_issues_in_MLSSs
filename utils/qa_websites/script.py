@@ -3,7 +3,7 @@ import requests
 import json
 from time import sleep
 
-from utils import init_logger, get_key, save_file, save_to_csv, load_file
+from utils import init_logger, get_key, save_file, save_results, load_file
 
 logger = init_logger()
 
@@ -42,7 +42,7 @@ def get_top_users_id_per_tag(website: str, tags: List, n_results=100, verbose=Fa
                 user_ids = []
                 for user in parsed_response['items']:
                     user_ids.append(user['user']['user_id'])
-                k = get_key(tag, user_category, period)
+                k = get_key('StackOverflow', user_category, period, tag)
                 ans[k] = user_ids
     return ans
 
@@ -136,7 +136,7 @@ def get_web_handles_datascience_stack_exchange(ans: Dict) -> Dict:
     website = 'datascience'
     website_handles = get_top_users_web_handles(
         website=website, verbose=verbose)
-    k = get_key(website)
+    k = get_key('DataScience-StackExchange')
     ans[k] = website_handles
     return ans
 
@@ -180,8 +180,11 @@ def get_web_handles_datascience_stack_overflow(ans: Dict, use_cached_user_ids=Fa
 
 
 if __name__ == "__main__":
-    ans = {}
-    ans = get_web_handles_datascience_stack_overflow(ans)
-    save_file('tmp_final.bin', ans)
+    # ans = {}
+    # ans = get_web_handles_datascience_stack_overflow(ans)
+    # save_file('tmp_final.bin', ans)
+    ans = load_file('tmp_final.bin')
     ans = get_web_handles_datascience_stack_exchange(ans)
-    save_to_csv('final.csv', ans)
+    save_file('tmp_final.bin', ans)
+    # ans = load_file('tmp_final.bin')
+    save_results(ans)

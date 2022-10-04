@@ -4,6 +4,7 @@ import os
 import pickle
 import pandas as pd
 from datetime import datetime
+import numpy as np
 
 PATH = Path(__file__).parent.resolve()
 DATA_PATH = Path(PATH, 'data')
@@ -17,10 +18,14 @@ def init_logger():
     Output:
         logger
     """
-    logger = logging.getLogger('scope.name')
 
+    logger = logging.getLogger('scope.name')
+    # Create log dir if it does not exists
+    log_dir = Path(DATA_PATH, 'logfiles')
+    log_dir.mkdir(parents=True, exist_ok=True)
+    # Create log file
     t = datetime.timestamp(datetime.now())
-    f_path = Path(DATA_PATH, f'logfile-{t}.txt')
+    f_path = Path(log_dir, f'logfile-{t}.txt')
     file_log_handler = logging.FileHandler(f_path)
     logger.addHandler(file_log_handler)
 
@@ -62,10 +67,10 @@ def load_file(file_name):
     return obj
 
 
-def save_to_csv(file_name, d):
+def result_dic_to_df(d):
     """
-    Save to csv the results of the script that
-    are saved in a dict. It expects the dict's keys
+    Transforms the results stored in the result dictionnary
+    into a dataframe. It expects the dict's keys
     to follow 'get_key' function's nomenclature.
     """
     websites, user_categories, periods, tags, web_handles_f = [], [], [], [], []
@@ -79,6 +84,40 @@ def save_to_csv(file_name, d):
             web_handles_f.append(web_handle)
     df = pd.DataFrame({'website': websites, 'user_category': user_categories,
                       'period': periods, 'tag': tags, 'web_handle': web_handles_f})
-    df = df.drop_duplicates(subset=['web_handle'])
-    f_path = Path(DATA_PATH, file_name)
+    return df
+
+
+def save_results(d):
+    """
+    Save to csv the results of the script that
+    are saved in a dict. It expects the dict's keys
+    to follow 'get_key' function's nomenclature. If 
+    merge_old_results is set to True, it will try
+    to read the results from a previous run, looking for a 
+    file named file_name.
+    Input:
+        file_name: The file name used to look for previous results and to save the final results.
+        d: The dictionnary with the results of the run
+        merge_old_results: Whether to merge current results to previous results
+    """
+    df = result_dic_to_df(d)
+    f_path = Path(DATA_PATH, 'final.csv')
+
+    new_web_handles = set(df['web_handle'].unique())
+    # If we want to use previous results and the file exists
+    if f_path.exists():
+        # Read previous results
+        old_df = pd.read_csv(f_path, keep_default_na=False)
+        # Update the set of new web handles by removing old ones
+        old_web_handles = set(old_df['web_handle'].unique())
+        new_web_handles = new_web_handles - old_web_handles
+        # Merge dataframe
+        df = pd.concat([old_df, df])
+        df = df.drop_duplicates()
     df.to_csv(f_path, index=False)
+
+    f_path = Path(DATA_PATH, 'new_emails.txt')
+    with open(f_path, 'w') as f:
+        for new_web_handle in new_web_handles:
+            f.write(f'{new_web_handle}\n')
+    return df
