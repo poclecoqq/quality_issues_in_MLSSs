@@ -56,6 +56,7 @@ def fetch_all_users_ids(tag):
 
 
 def fetch_users_email(users_id):
+    print(f'---------------- Fetching emails from user ids ----------------')
     emails = []
     for user_id in tqdm(users_id):
         email = fetch_user_email(user_id)
