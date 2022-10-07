@@ -1,5 +1,4 @@
 from collections import defaultdict
-from wsgiref import headers
 import yaml
 from pathlib import Path
 import requests
@@ -48,3 +47,6 @@ class TokenProvider():
         self.token_idx[query_type] = (
             self.token_idx[query_type] + 1) % len(self.tokens)
         return token
+
+
+token_provider = TokenProvider()

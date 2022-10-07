@@ -1,25 +1,5 @@
-import requests
-from utils import TokenProvider
 import datetime
-
-token_provider = TokenProvider()
-
-
-def get_n_results_github_user_search(tag, start_date, end_date):
-    token = token_provider.get_token('search')
-    url = f'https://api.github.com/search/users?q="{tag}" type:user created:{start_date}..{end_date}'
-    headers = {
-        "Accept": "application/vnd.github+json",
-        "Authorization": f"Bearer {token}"
-    }
-    res = requests.get(url, headers=headers)
-    res = res.json()
-    return res['total_count']
-
-
-def search_users_github(tag, start_date, end_date):
-    url = f'https://api.github.com/search/users?q="{tag}" type:user &page=100'
-
+from github_queries.user import get_n_results_github_user_search, search_users_github
 
 if __name__ == "__main__":
     now = datetime.datetime.now().isoformat()
@@ -28,3 +8,7 @@ if __name__ == "__main__":
     a = get_n_results_github_user_search(
         "Machine Learning Engineer", GITHUB_CREATION_DATE, now)
     print(a)
+    a = search_users_github(
+        "Machine Learning Engineer", GITHUB_CREATION_DATE, now, 1)
+    print(a)
+    print(len(a))
