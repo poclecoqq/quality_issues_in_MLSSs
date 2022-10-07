@@ -48,3 +48,15 @@ def search_users_github(tag, start_date, end_date, page_n):
     for user_profile in res['items']:
         user_ids.append(user_profile['login'])
     return user_ids
+
+
+def fetch_user_email(user_id):
+    token = token_provider.get_token('core')
+    url = f'https://api.github.com/users/{user_id}'
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "Authorization": f"Bearer {token}"
+    }
+    res = requests.get(url, headers=headers)
+    res = res.json()
+    return res['email']

@@ -1,8 +1,10 @@
 import datetime
 import pickle
 from tqdm import tqdm
+from pathlib import Path
 
-from github_queries.user import get_n_results_github_user_search, search_users_github
+from github_queries.user import get_n_results_github_user_search, search_users_github, fetch_user_email
+from utils import save_user_ids, save_emails
 
 
 def fetch_all_users_ids(tag):
@@ -53,8 +55,25 @@ def fetch_all_users_ids(tag):
     return fetch_all_users_ids_rec(tag, start_date, end_date)
 
 
+def fetch_users_email(users_id):
+    emails = []
+    for user_id in tqdm(users_id):
+        email = fetch_user_email(user_id)
+        if not email is None:
+            emails.append(email)
+    return emails
+
+
+def main(tags):
+    for tag in tags:
+        # Search for users matching some keyword
+        users_id = fetch_all_users_ids(tag)
+        save_user_ids(users_id, suffix="user_search")
+        emails = fetch_users_email(users_id)
+        save_emails(emails, suffix="user_search")
+
+
 if __name__ == "__main__":
-    a = fetch_all_users_ids("Machine Learning Engineer")
-    print(a)
-    with open("tmp.bin", 'wb') as f:
-        pickle.dump(a, f)
+    tags = ["Machine Learning Engineer", "Data Scientist"]
+    # tags = ['Data Scientist']
+    main(tags)
