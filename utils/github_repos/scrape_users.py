@@ -66,14 +66,16 @@ def fetch_users_email(users_id):
 
 def main(tags):
     for tag in tags:
+        tag_suffix = "-".join(tag.split(" ")).lower()
         # Search for users matching some keyword
         users_id = fetch_all_users_ids(tag)
-        save_user_ids(users_id, suffix="user_search")
+        save_user_ids(users_id, suffix=f"user_search-{tag_suffix}")
         emails = fetch_users_email(users_id)
-        save_emails(emails, suffix="user_search")
+        save_emails(emails, suffix=f"user_search-{tag_suffix}")
+        print(f"\n** Fetched {len(emails)} emails! **\n")
 
 
 if __name__ == "__main__":
-    tags = ["Machine Learning Engineer", "Data Scientist"]
-    # tags = ['Data Scientist']
+    # tags = ["Machine Learning Engineer", "Data Scientist"]
+    tags = ['Data Scientist']
     main(tags)
