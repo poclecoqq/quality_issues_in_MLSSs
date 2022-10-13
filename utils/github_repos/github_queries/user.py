@@ -59,4 +59,4 @@ def fetch_user_email(user_id):
     }
     res = requests.get(url, headers=headers)
     res = res.json()
-    return res['email']
+    return res.get('email')
