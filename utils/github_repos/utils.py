@@ -37,6 +37,7 @@ def save_user_ids(user_ids, suffix=""):
     _save_pickle(users_id_bin_path, user_ids)
 
 
-def load_user_ids(suffix=""):
-    users_id_bin_path = Path(data_dir, f"users_id-{suffix}.bin")
+def load_user_ids(timestamp, suffix=""):
+    dir = Path(crnt_dir, "data", timestamp)
+    users_id_bin_path = Path(dir, f"users_id-{suffix}.bin")
     return _load_pickle(users_id_bin_path)

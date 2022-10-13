@@ -56,13 +56,26 @@ def fetch_all_users_ids(tag):
 
 
 def fetch_users_email(users_id):
+    """
+    Fetches the email associated with a user profile,
+    given a list of users id.
+    Input:
+        users_id: a list of users id
+    Output:
+        emails: a list of email addresses
+
+    """
     print(f'---------------- Fetching emails from user ids ----------------')
     emails = []
-    for user_id in tqdm(users_id):
-        email = fetch_user_email(user_id)
-        if not email is None:
-            emails.append(email)
-    return emails
+    try:
+        for user_id in tqdm(users_id):
+            email = fetch_user_email(user_id)
+            if not email is None:
+                emails.append(email)
+        return emails
+    except Exception as e:
+        save_emails(emails, suffix=f"user_search-partial-results")
+        raise Exception("Could not fetch all emails.") from e
 
 
 def main(tags):
