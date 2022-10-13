@@ -41,3 +41,6 @@ def load_user_ids(timestamp, suffix=""):
     dir = Path(crnt_dir, "data", timestamp)
     users_id_bin_path = Path(dir, f"users_id-{suffix}.bin")
     return _load_pickle(users_id_bin_path)
+
+def load_emails(path):
+    return _load_pickle(path)
