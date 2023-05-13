@@ -1,7 +1,10 @@
 quality-dimensions:
-  Data representativeness: 13
-  Data traceability: 0 # TODO
-  Data accuracy and precision: 9
-  Data reliability: 4
-  Data consistency: 5
-  Labels accuracy: 7
+  Data representativeness: 11
+  Data traceability: 1
+  Data accuracy and precision: 13
+  Data reliability: 5
+  Data consistency: 3
+  Data integrity: 1
+  Labels consistency: 3
+  Labels accuracy: 9
+  Absence of Annotation bias: 2
