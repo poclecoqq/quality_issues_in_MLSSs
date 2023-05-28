@@ -1,0 +1,306 @@
+All right. 
+
+Interviewer 1: Uh, to start off, can you give us a little bit in of information about yourself? So what is your current experience and how many year you have in Okay. Of experience you have in 
+
+Interviewee: machine learning? Yes. I am full professor at university in Country X. I teach and do research on seeking that processing, match processing and matching learning.
+
+Interviewee: And also in 2000. I co-founded a Startup, uh, in my company. What we do is to, to propose solutions based on matching learning in order to improve the decision making processes of of companies. Uh, so far we have done some projects, uh, related with NLP to create a recommend their system. And also we have been working on computer vision, uh, by developing a, a mobile, uh, a web application, eh, in order to count and carry out, um, eh, the control of e of, of inventories in, in companies.
+
+Interviewee: Um, and, and last year I was working as a consultant for a company in, um, in the Country Z. They met, uh, Company Y. Um, uh, in this project I worked for, um, for Company Z. And I was data scientist. I played that role and, and I had to, I was in charge of carry out and uh, and of developing, uh, machine learning workflows in Azure ML in order to detect, um, Nicole deposits in several in, in Country Y.
+
+Interviewee: In indeed there was. Region that we inspected. Uh, so I, I, I had, I, we use, um, geophysical, geochemical data sets, uh, in order to stack features and then train, uh, different matching learning models. And also we develop, um, um, convolution of New York network model. To, to, uh, to detect deposits in some, in some regions in, in Country Y.
+
+Interviewee: So that's, that's my experience related directly to too much in learning, developing. 
+
+Interviewer 1: Okay. Sorry. It is great. It's honor, honor to have you here. Thank you for attending this interview, . 
+
+Interviewee: Okay, cool. Yeah. 
+
+Interviewer 1: Um, so to start, I will ask you a very general question. What are the main quality issues you have encountered with your data model or system so far?
+
+Interviewee: Okay. Oh, that's a good question. Uh, so far with the data, mainly, uh, for instance, in. In the N L P project that I told you in the recommended systems, but we found us, uh, some inconsistencies in these, in the data sets that correlated with, uh, cvs with, uh, and also with, uh, chop offerings also, uh, uh, we, we didn't find, uh, some fills in the dataset that were necessary in order to carry out inference the, the inference of the algorithm.
+
+Interviewee: Uh, so, uh, to sign up, what we found was, uh, some, uh, information missing, data missing, uh, and also inconsistent inconsistencies. Uh, for instance, we have data user of the platform, uh, didn't have the. Complete information or that they were redundancy, that, uh, there were several users or that some users were like Tommy users.
+
+Interviewee: They, they didn't have, uh, uh, a profile attached to them. So that, that's the information, that's the issues that we have found, um, from the data data point of. Um, and then with respect to the models, but okay. I have been working with traditional machine learning like spns or, or decision trees and also with modern techniques like, uh, uh, graph New York networks or commotion on New York Angles.
+
+Interviewee: Um, but, but I found the, but the issues that I have found is, of course, what that some models require a lot, a lot of data in order to be properly trained. Um, and also the adjustment of the hyper parameters, uh, that's an issue. Um, yeah. And also the, the how is is to, to reproduce and. The, these permits, uh, and in order to, to communicate the results and, and also to facilitate the, the development as that's an issue too.
+
+Interviewee: Um, how, how easy it is to, to reproduce the, uh, not only for us, let's say one year after the development, but al also for other people or other developers that want to start from what we have done until some. Um, and, and in order to, to not waste time and effort, um, how to make that system, uh, to be easily, uh, reproduce and repeatable, that, that's what I have found from, from the data, uh, point of view and, and the models point of view.
+
+Interviewer 1: Okay, so the last issue you mentioned, Is it that it's difficult to reproduce, experiment, or is it that, um, MLM are really complicated and it's difficult to, uh, give your project to someone else when you're finished or like documentation 
+
+Interviewee: y Yes. Uh, um, yes, it is difficult to reproduce this payment. I mean, to, to have concent consistent results along several executions and.
+
+Interviewee: Uh, on one site, uh, on the other side, how to communicate the, those results. Um, in terms not only, uh, of the metrics, performance metrics, but also in terms of the system described by the code. Of course, we, we have to use, uh, like, uh, GitHub for, uh, control versions of the code. Um, but, but, but it's challenging because if, if we are, uh, not, I mean, even in a small group, like three or four developers, Like, uh, to have the, uh, updated version and, and also to, to decide what, what changes, uh, are going to be preserved or what changes are going to be denied.
+
+Interviewee: The, so that's, that's, uh, those having some issues. 
+
+Interviewer 1: Okay. I see. Okay. And you mentioned earlier on the data quality issue you mentioned, I think, uh, having duplicate entries or, or duplicate entities. Yes. Yes. Yeah. How do you address 
+
+Interviewee: this problem? What, what we did was to always thinking into account the the client's opinion.
+
+Interviewee: I mean the, the, because they, they know, or at least it is what I, we suppose that they know they own data set. Uh, and so we ask, uh, if we call, uh, let's say remove, remove some, some, some entries in the, in the data. What, what would, if it is relevant or not for, for them, um, and also. If, if, if, if we had some missing data, what we did was to remove the whole, the whole record.
+
+Interviewee: I mean, if, if some fills of some user were missing, what we did was to remove the whole, uh, record. Um, and that, that's, uh, how we cope with that issue, uh, in that project, in the nlp. Okay. Okay. Thank you. 
+
+Interviewer 1: Um, I'm gonna ask a few questions to you about data collection and the issues you may have with data collection.
+
+Interviewer 1: Uh, so did you ever use data that was collected? Um, by, by manual, by someone? So yeah. So someone who manually collected data 
+
+Interviewee: for Yes, yes, uh, indeed In my company. Uh, we, we develop a web application, uh, based on computer vision in order to establish, uh, what is the strategic, uh, display of products in shelves, in, in retailed stores.
+
+Interviewee: So, uh, the, the user had his smartphone. The user took, uh, a photo of the, of the. Then, uh, the algorithm, uh, determine, uh, what products and how many products, uh, of, of giving class, let's say sodas or snacks or whatever, uh, were included. So, uh, what we did was to, to collect the data, the pictures manual. Uh, we did it by, by all ourselves.
+
+Interviewee: We went to the stores with our smartphones. We used, uh, three different smartphones, different models and brands, order to have a data, uh, uh, variability into account. Um, and then we, we collected this, this, all this, uh, information, these photos, we define it a protocol in order to, to take these photos, uh, and make it easier for, for the algorithm to, to, to detect and classify the products.
+
+Interviewee: Once we did that, we started the labeling, uh, phase in which we use, um, Open source online, uh, tool, um, in order to to, to label this, this, these, um, these products by creating, uh, a bot inbox around these products and then defining a class to these products, uh, and, uh, assign it, uh, assigning a class to each one of these products.
+
+Interviewee: And, and we had some issues in order to de, to define, let's say, if we, let's say that we had a product that were not properly placed in the, in the shelf. If, if, but if we have that, what, how do we label that? So we, we define an protocol in order to to, to clean up the data and make it the work easier for the algorithm that, by the way, we use, uh, convolution on their network based on, uh, press net 50, uh, 
+
+Interviewer 1: backbone.
+
+Interviewer 1: Okay. So to summarize what you said, You had a pro, a pro, uh, a project where you were trying to, um, get, um, okay. Can you just clarify what, what was the goal? I'm 
+
+Interviewee: sorry. Uh, the goal was to determine the commercial strategy. I mean, the, the companies that the, the sales, the say snacks or sodas or, or cosmetic products, they, uh, place the items in a giving way in such a way.
+
+Interviewee: That, mm, it is, um, some products are going to be more attractive for, for, for the client. Uh, and so it is very important for, for them, uh, to have the distribution, the special spatial distribution of the products. Uh, and so what we did was to, to provide this, this web application, uh, in such a way that the, the user could determine, uh, very fast.
+
+Interviewee: How many products were included in the shelf and what type of products. Okay, I 
+
+Interviewer 1: see. And once you take, basically you take a picture and will it tell you if it's a great place of product? This is it. Is this what you. 
+
+Interviewee: Oh no, we were, uh, it, it didn't carry out that, uh, evaluation of it was good or bad. I mean, um, that, that's in the nice, in the next phase of the, of the development.
+
+Interviewee: Oh, okay. But what, what we did was to count, to count how many products of each, uh, class, of each category and, and to provide the placement of that product in the, in the picture, in the, in the. ? Yes. Okay. I 
+
+Interviewer 1: understand. It's clear. Thank you. Okay. Um, okay, so, so ba basically you, there were two phase where you collected data.
+
+Interviewer 1: There were the pictures. Yes. And then there was the labeling part. Yes. And for the labeling part, you mentioned you used open source tools, source two? Yes. Okay. And these tools were, they were, did they, was it models that label, well not label, but, uh, segmented part of the images or, um yes. Yes. 
+
+Interviewee: They place bounding box.
+
+Interviewee: Around each, each, each object. Okay. And what work? Yeah. Go for it. Oh, yes. They, they place, um, bonding objects, uh, around each object. And then we assigned a class. Then in our case was just a number, and, and we had, um, a lookup table in order to, and we knew what number, uh, were corresponded to what class. Uh, and yes, that, that's how we did work.
+
+Interviewer 1: Okay. And was there some issue with the bonding boxes? 
+
+Interviewee: Yes, because, uh, sometimes we had to define, um, how large to define the, the bonding box, especially if we had, uh, densely populated, uh, scenes and we had to define very well what was the, the, the limits of the, of the building boxes. And also, uh, beyond the, besides the body boxes, uh, uh, was to define what, what to include as a product or not.
+
+Interviewee: Because if a product was misplaced, we, we didn't, we didn't include it, uh, as a product. Uh, even the case when the, when, when that product was, uh, visible. But if you wa, if it was misplaced within, include as product. Uh, so we, we had to face with issues like, like those, uh, and also to make recommendations to find a protocol for the user, uh, in such a way that the users should took the pictures, uh, looking, um, uh, by using them front view.
+
+Interviewee: Uh, I mean, uh, it couldn be inclined or something like that. Um, and also to, to, to. To be very aware of the, of the illumination and also of the quality of the, of the, of the picture. Uh, the picture, of course couldn't be blurry, so, or something like that. I see. I see. Okay. Thank you. Um, okay, 
+
+Interviewer 1: so move on to another data collection process.
+
+Interviewer 1: Have you ever used external data? So for example, you could have public dataset, third party, e p I or webs, scrap. 
+
+Interviewee: Oh, yes. Uh, we have used, uh, third party, uh, data sets created by, uh, third party, uh, users. Um, I have been working on, on the evaluation of, of image quality and video e evaluation. And so there are some well established, uh, dataset in that topic.
+
+Interviewee: Um, and for instance, um, If when we were working on the evaluation of video quality, what what you have is like videos where video clips like 10 seconds of duration. And then you have, uh, the means score evaluations of that tens or some, in some cases, hundreds of peoples have provided to, to, to a given video.
+
+Interviewee: So, um, we use the videos and also discourse provided by, by people in order to test our algorithms that whose task was to predict the quality of the, the, the visual quality of the. , um, and in these dataset, uh, have been curated. Um, and so we in general, we don't find inconsistencies, uh, in these data sets because they have been well maintained and curated.
+
+Interviewee: Um, and they are well, uh, established in the, in the, in the literature. 
+
+Interviewer 1: I see. Okay. Perfect. Thank you. Um, okay. You're. Yes. Have you ever measured the quality of your data and or tried to improve it? 
+
+Interviewee: Oh, yes, but well, we have done it indirectly. I mean, not, not by using just one, one metric, but by determining if, if there are, let's say, if there are missing data, Or, or, or redo the data, uh, or, or if the, the labeling is consistent.
+
+Interviewee: I mean, by using several users, uh, and doing the same task. And if, if that label is consistent, that is what, uh, so ways that we have Mm. Implemented in order to. To measure somehow the quality of the data. But so far we have na uh, something like a metric in order to optimize that metric and include the quality of the data.
+
+Interviewee: I know that there are some works in that direction, um, but unfortunately I haven't been able to to, to implement those, those approaches so far. 
+
+Interviewer 1: I see. I, I'm just curious, what are the works. That goes in that direction of evaluating the quality of your data? 
+
+Interviewee: Oh, yes. I, like some weeks ago, I, I, I was, uh, reviewing a paper, uh, group written by Margaret Michelle.
+
+Interviewee: I knew that she is now working at HO Phase and she used to work for Google. Uh, but now I know that she's, uh, having face and that she, she proposed, she developed. Uh, recently, I mean, like two weeks ago. Uh, an approach in order to evaluate the quality of data. Uh, if, if I, I can search it and, and share it with you if you'd like.
+
+Interviewee: Uh, I found it interesting. I did it. I fortunate I didn't, I haven't read it carefully, but I think that, that, uh, I can remember there are some interesting ideas that one should take into account in order to initially, 
+
+Interviewer 1: Yeah, I would love to have it if it's already published. I would love to 
+
+Interviewee: archive. Is archive.
+
+Interviewee: Okay. Okay, I see. Yes. Perfect. Great. Okay. 
+
+Interviewer 1: Uh, alright, thank you. Um, is there any other data quality should we miss that you consider relevant? 
+
+Interviewee: Uh
+
+Interviewee: oh, let me remember.
+
+Interviewee: No, no, no, no. I think that at least related to my experience, uh, no. I think yes I have. Yeah. Okay, perfect. 
+
+Interviewer 1: Thanks. Um, how do you evaluate the quality of your models? And as a reminder, quality is not only defined by the ML performance accuracy if once score, uh, but also about other aspects such as explainability, uh, robust.
+
+Interviewer 1: Scalability, efficiency? 
+
+Interviewee: Uh, yes. Okay. Yes. Uh, for instance, in this, um, the project I told you that in which we use computeration to determine the spatial dis distribution of the items in the, the retail stores. Um, Well, of course we use the F1 score in order to measure the quality of classification, but also we were looking for some smaller models, uh, you know, and smaller than cross set 50, uh, uh, in order to, to be, uh, to be able to looking for.
+
+Interviewee: Implementation in the locally, in the, in the, in the smartphone. Uh, because where this model was located in the cloud, we use the A in w s, but what we were trying to, to implement it in the, in the, in the smartphone. So one of the metrics that we've used, How the, is the memory size of the model in order to, to, to implement it in the, in, uh, in smartphone.
+
+Interviewee: Uh, and also we directly use that explainability. Uh, in this model is such a way that, that we were looking for, for consistent, uh, outputs in spite of, uh, small variations in the, in the inputs. Um, so, uh, for instance, if we change the direction, uh, on which we saw a product where our, or we, even if we change the type of, of smartphone used to capture the images, We were, uh, um, uh, testing how robust is our system in order to, to, to keep, uh, the same label, even if, if the, even if the input, picture changes, respect to illumination or to point of view.
+
+Interviewer 1: Okay. See, and, um, if, if you see a problem with a robustness, how do you address 
+
+Interviewee: the issue?
+
+Interviewee: Uh, normally what we do is to start by looking at the data, train data, uh, um, if, if, if it is not robust with respect to given condition, we try to, to provide more samples of that condition, um, to, to generate those samples. Uh, And also to create out an data mutation, uh, in order to genetic those examples of interest.
+
+Interviewee: Um, that that's how we address the process. 
+
+Interviewer 1: Perfect, thank you. And earlier on you mentioned, um, that you were reducing the size of your models in the, the memory, right? Yes. Yeah. Uh, how, how did you do this? Did you change models or you, you use quant quantization? 
+
+Interviewee: Yeah, I like mobile net. Uh, that was specifically, um, developed by Google to, for this ca for those cases.
+
+Interviewee: I see, I see. Okay, 
+
+Interviewer 1: perfect. Thank you. Um, have you ever assessed a quality of a model prediction with a user of the. 
+
+Interviewee: Uh, I mean, do you mean in production? Yes, in production environment. Uh, yes. We, in this project I told you about the computer vision. Uh, we carry out some tests with the final users. I mean, I mean, they, they are, uh, like commercial.
+
+Interviewee: Who are, who are in charge of counting and determining what, what, what should be the correct position of some products given that the company pays, uh, the, the, these commercial agents, uh, in order to display the, their products in the best way. But every company is doing the same. So there, there are, there are competitions.
+
+Interviewee: Uh, so we tested that with, with some of those commercial agents and we receive feedback from them, uh, respect to instance, uh, speed of response and also, um, the, the accuracy of the, of the. Predictions. Um, yeah. Uh, but they were few. They were like three, four, but we, we, we haven't scaled up so far. Uh, but those are our plans to it.
+
+Interviewee: Okay, 
+
+Interviewer 1: I see. And, um, what were some of the issue that were reported by the users? 
+
+Interviewee: Oh, yes. Uh, for instance, they, they want to, um, Um, a feature, uh, they, they, they were, uh, asking for a new feature like, uh, to be able to stitch or integrate several pictures, uh, from that unique picture to detect and, and classify the products in that unique picture that, that they were asking for that additional feature.
+
+Interviewee: Because they, they, they found, uh, cumbersome or difficult to take several pictures by themselves and then the algorithm and say, okay, for picture one, this is the distribution. Picture two, and, and so on. But then they themselves had to analyze all the information. They, of course, they, they wanted to the, the machine to do the, that, that work for them.
+
+Interviewee: Um, that, that, that was the, the main issue. But with respect to the speed, um, that it took some seconds, like between 15 and 30 seconds to get the, the picture analyzed depending on the, uh, quality of wifi connection. Um, But that one, the, was the main issue that I report. I see. Okay. Perfect. Thank you. 
+
+Interviewer 1: Um, okay.
+
+Interviewer 1: Have you encountered any other quality issue during the evaluation of your models? 
+
+Interviewee: Uh, you mean evaluation in production environment, or, uh, no, no Evaluation. Justine in testing be before product. 
+
+Interviewer 1: Mostly testing. 
+
+Interviewee: Yeah. Okay. Uh, since we, we need to, to report, uh, we, we, we try to, what we do is to, to shuffle the, or the training and the test data set, uh, in order to determine how sensitive is the model with respect to the composition of the training data.
+
+Interviewee: So, uh, what we do is to shuffle like a hundred times, and what we do is to report the, the median on the standard deviation, uh, of let's say the accuracy or F1 score or whatever. Um, and so, uh, that, that's the procedure. The procedure that, that we follow. Um, and for us, uh, w uh, sometimes we ask, okay, what if we do it 100 times, but what if it is 200 times or only 50 times?
+
+Interviewee: Uh, that that's the issue that we have found. Um, but so far in our experiments, what we've found is that there, there is not a traumatic, uh, variation between the medians if we do it only 50 times or 100 times. Uh, what we trying to to demonstrate is that our model is robust respect to the variation of the of training set com.
+
+Interviewee: Okay, 
+
+Interviewer 1: so what you're telling me is this is an approach to make sure your models are robust. Yes. If I'm correct, yes. Yes. Okay. And the quality issue is the model are sometime not robust? Yes. Okay, I see. Yes. Thank you. Um, oh, alright. I, moving on to model deployment or, okay. Machine learning first and deployment.
+
+Interviewer 1: Okay. Um, how and where are your models generally? 
+
+Interviewee: Uh, so far we have been using, uh, uh, a a W S, um, cloud technologies. Um, and that, uh, that, that is where, where we Yeah. Deployed and, mm-hmm. , oops, sorry. I got
+
+Interviewee: Uh, let me correct this.
+
+Interviewee: Okay. Sorry. Can you hear me? Yes, we can. Oh, okay. Uh, yes. C Could you repeat the, the question please? Oh, but 
+
+Interviewer 1: you already answered it. You mentioned that you were deploying your model to, uh, aw. W s. 
+
+Interviewee: Oh, yes, yes. Yeah, that is, yes. Yes. Um, 
+
+Interviewer 1: what are the challenges you have encountered when deploying machine learning 
+
+Interviewee: software system?
+
+Interviewee: Um, when, when we have been, uh, deploying these models, um, it's to, to determine what, what is the, um, In the server architecture that when, when we design it and implemented, of course, if we do it in the, in the cloud service, um, uh, this is, uh, the, the, the a w s or whatever, uh, the service we have to pay for, for, for given, for some implementations.
+
+Interviewee: So, uh, the challenge is to, to. Um, good architecture, good in terms of the efficiency, but also in terms of the cost for, for us, because since this, the, um, this application is going to be consumed by, uh, several users at the same time. So we have to currently that, uh, the availability of the. Uh, but at the same time, let's say that we have, uh, uh, an instance, uh, elastic computing instance executing, um, 24 7, but we only have, um, that some cases the users use the, the application.
+
+Interviewee: So where we'll need in that case, uh, to use, uh, uh, several less applications such as Lambda, which is the technology used by A A W S. But, um, Problem is that by using Landa, we have to turn into account that we have to change probably the architecture that we already have done by, um, putting, use the, the e C two, uh, 24 7.
+
+Interviewee: Uh, so that that's the problem that we have, uh, in the deployment, that we have a, a budget, uh, and also we have some requirements and how to. Design and implement properly, such a way that we meet other our requirements and at the same time we keep our budget. I 
+
+Interviewer 1: see. Okay. I see. And did you mention that it was difficult to change from one architecture to another, like serverless to not 
+
+Interviewee: Yes.
+
+Interviewee: Yes. Uh, note in the other way. Yeah. Other way? Yes. Okay, 
+
+Interviewer 1: perfect. Thanks. Um, Did you ever have a model that performed well locally but poorly once deployed? 
+
+Interviewee: Oh, but you mean, uh, you are asking when, let's say we train without giving their asset, but when the user is going to, to use to apply the, to deploy the application, they have perhaps, uh, Data and likely data chief.
+
+Interviewee: Uh, since we, we, we haven't done such, such, um, um, implementations and in great scales, we haven't seen that so far. I mean, uh, as I told you, Uh, we are working still on, on, on deployment of course, but testing with, um, few users. This is not, not used yet, like thousands of million users. So, uh, so far in the small tests we have done, we, we, we haven't had those problems, but of course, uh, if, if, if we have data shift, uh, the solution is to.
+
+Interviewee: So we try to include new examples in the training set, in the training set that somehow represents those possible cases. Um, if it does, by using, by sampling those data sets directly or by using data augmentation or now perhaps could be a good idea to use, uh, generative models. Yes. 
+
+Interviewer 1: I see. Thank you. Um, have you encountered any other quality issue with your model or system during the deployment of, during the deployment phase?
+
+Interviewer 1: Yeah. 
+
+Interviewee: Uh, no. No, no. 
+
+Interviewer 1: Perfect, thanks. Um, how do you ensure that the quality of a machine learning software system does not decrease over time? So it's a monitoring questions. Yes. 
+
+Interviewee: That's, uh, of course. by the user input, by using, using the user, uh, feedback. Um, and sure if, if the user is not certified, uh, let's say with respect to the accuracy, um, and so we have to carry out something like.
+
+Interviewee: Mm, study a careful study, uh, about what were the cases, those particular cases, and then try to include those samples, uh, those images into the, the model, into the workflow training, workflow, uh, and testing of the model. That's, uh, what I do. I see.
+
+Interviewer 1: Have you encountered issue with data during the maintenance of a machine learning software 
+
+Interviewee: system? Um, y yes. Uh, we, we have encountered issues less like the ones, uh, I say before. Earlier, uh, like the missing data inconsistencies, uh, or in the case of images, the images are, are blurry, for instance, or inconsistencies in, in label, in labeling.
+
+Interviewee: Okay, perfect. 
+
+Interviewer 1: Um, is there any other issue you, you we missed that you consider relevant for? Um, model maintenance for system maintenance? Sorry. 
+
+Interviewee: Um, I, I think it's, it's very important to, to have, um, in mind always the feedback from the user, from the final user. Um, cause, uh, uh, and, and, and to, to keep that feedback in mind, uh, in order to, to improve, uh, and the models or build new models given the case.
+
+Interviewee: Perfect. 
+
+Interviewer 1: Thank you. Um, I'm gonna ask, ask you, uh, I will name a few quality aspects and if you ever had an issue, a quality issue with one of these, uh, feel free to mention it. And, uh, and some of them, you already mentioned them, so, uh, we don't have to go over again. Uh, so the is, the aspects are fairness, robustness, explainability, scalability, data privacy, and model 
+
+Interviewee: security.
+
+Interviewee: Oh, so, uh, with respect to, to furnace, uh,
+
+Interviewee: it did, for instance, in, in, in, when we were using, um, information from, from clients and for this recommended system, by the way, it was, uh, recommended system for, for users of a job search website. And so the recommendation, uh, the purpose of the recommendation was to give, uh, uh, a user an idea what she or he could do in order to improve, um, the, uh, the, her or his profile, uh, in order to get better jobs, um, better paid jobs.
+
+Interviewee: Um, and so with respect to furnace in, in that case, Uh, of course we receive an, um, anonymized data, um, in, and, and, and we, we, we didn't take the county degenerate of, of the user. Uh, that was something that we just removed and in such way that we started to, to work only on the profiles and professions. Uh, so.
+
+Interviewee: We by being blind with respect to, uh, a sensitive issue or sensitive featuring in, in, in data sets about personal information such as gender. I believe that, uh, we, we, we were not. Biasing assistant in order to give some recommendations for women and other recommendations for, for men. Um, okay. What, what, what, what was, what was the, the next, 
+
+Interviewer 1: uh, uh, you had, there was robustness, explainability, scalability, data privacy, and model security.
+
+Interviewer 1: We don't need to. Only the one you have experience with. Right. 
+
+Interviewee: Okay. Uh, with explainability, um, uh, trying to explain how would the model, uh, behave with different types of inputs? Uh, yes, that's it. Okay. And, 
+
+Interviewer 1: and you, you had some issue regarding explainability of your model at some point,
+
+Interviewee: let me,
+
+Interviewee: Oh, yes. When, when we were evaluating the computer vision model, um, we, we found that for, for, for some products, um, there were, there were misclassifications uh, between, uh, categories. And so what we did was to increase the number of samples for that category, and they help us to, to, to, to cope with this issue.
+
+Interviewee: Okay, I see. 
+
+Interviewer 1: Perfect. Thanks. And, uh, finally, I have two questions for you. In your opinion, what is the most pressing quality issue researchers should try to solve? 
+
+Interviewee: Uh, for me, uh, the most pressing quality issue has to do with, with data, the quality of data, um, such way that, um, uh, one has to ensure that, uh, there is a consistency in, in the label.
+
+Interviewee: And, and also in consistency. Consistency in the, in the samples themselves. Let's say the quality of, of pictures or the quality of audio files. Uh, um, I think that, that, that's the, the main issue, perspective, quality, um, in learning. 
+
+Interviewer 1: Great. Thank you. And finally, do you have any other comment about the quality of, uh, 
+
+Interviewee: ML system?
+
+Interviewee: Yes. Uh, I find sometimes difficult to reproduce, uh, experiments for another researchers, um, e e even though that now the existence of, of, um, ripples, not only code ripples, but also data repos, eh, that has helped a. Uh, but, but I think that one has to ensure that the, if one is going to publish, uh, let's say code in GI or a paper in a journal, one has to include the, the code and also, uh, the minimum parameters or minimal requirements.
+
+Interviewee: Uh, in such a way that, uh, another person can reproduce easily the results. And we have, and, and I think that's very importantly, uh, uh, reproduce to be able to reproduce the work of other people. Yeah, that's a good point. 
+
+Interviewer 1: All right, so that's all for us. That's all the questions we need to ask. Yes. Thank 
+
+Interviewee: you.
+
+Interviewee: Thanks a lot, so much. Yes. Well, thanks. You're welcome. And please, Please lemme know if I can help, uh, if I can help you with anything else. Okay. 
+
+Interviewer 1: That's really kind of you. So thank you for attending this interview. It's really much appreciated and I think what you shared with us will be really useful, uh, for your study.
+
+Interviewee: So, okay. You are welcome. And, and let me know when you, uh, have a publication on or, or conclusions. I would like to Yes. To, to know about that. Perfect. Thanks a lot. Okay. Take care. Have a good day. Good day. Thank you. Bye bye.
+

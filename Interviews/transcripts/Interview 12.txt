@@ -1,0 +1,320 @@
+Interviewer 1: So what is a machine learning software system? It is just a software system. So any, any software system, uh, that has a machine learning component in it, right? And equality. Equality is just when you can say that one machine learning software system is better than another. Uh, So what is a machine learning software system?
+
+Interviewer 1: It is just a software system. So any, any software system, uh, that has a machine learning component in it, right? And equality. Equality is just when you can say that one machine learning software system is better than another. Uh, One, you can say this, it means that one, one has more quality, uh, for equal functionality.
+
+Interviewer 1: If one is better, it's the quality we're talking about. Uh, so we are looking for quality issues like problem in the quality of some machine learnings of our system. Uh, we are interested in two, your experience, not not general content, but really what you have experienced and, uh, really important. If you, you, if we ask you a question and you, you just on that experience, uh, or you, you.
+
+Interviewer 1: It's alright, you 
+
+Interviewee: know? Okay. I'll tell you we can, because I was, Yeah, I was wondering, I told you before, uh, because I'm a project manager, right. So I don't go in really in the technical details, but Yeah. So I'll just say, uh, I don't know if, I don't know. 
+
+Interviewer 1: Perfect. And will just be shorter. So that's, that's a, 
+
+Interviewee: Yeah.
+
+Interviewee: We are not necessarily 
+
+Interviewer 2: interested in those technical details, so just mention please your experiment. Experience. That's, Yes, I 
+
+Interviewee: will. Thank you. Okay. 
+
+Interviewer 1: Yeah. And, uh, your experience or what you've seen in your team. Uh, because oftentimes I think from project management Yeah, 
+
+Interviewee: yeah, yeah. Okay. That's part of the experience to me.
+
+Interviewee: Yeah. If I witness something or, Yeah, exactly. Yeah, yeah, yeah. Sure. 
+
+Interviewer 1: Perfect. And we'll ask you about 20 question, 25, 20 question. Okay. All right. Uh, so can you start by giving a brief description of your current experience? Uh, so how much experience you have in general and specific to ml? 
+
+Interviewee: Ml? Uh, well experience in general, it would be too long.
+
+Interviewee: I'm old now , so now, but I'm at Company X since a little bit over a year, and so I'm, uh, while we call here the AI delivery Manager. It's a very, uh, long term to say project manager. So I, um, my experience is, uh, I would say twofold. One is I'm managing some projects, so I, uh, have made a, a big one with pr with me, which is close to the end.
+
+Interviewee: So it's more than, uh, well, about a year long project. And I'm in the middle of a project with, uh, Ricardo. Um, And, uh, we are like three months in. So that these are the projects. And, uh, I'm also coordinating the, the workshops. So I made a, a lot of workshops in a year, uh, strategic workshops, which are mostly to identify in interesting, uh, AI use cases.
+
+Interviewee: This is very high level and, uh, preparation workshops where we really take one use case and we, we dig into the case, uh, to make it, to prepare it, to make it ready to, to, to, for project start, right? So, uh, participate in, in that. So within that, we have, uh, that audits, um, uh, risk assessment, uh, making sure we know the KPIs, the performance we are aiming at and stuff like that.
+
+Interviewee: So that's my experience, uh, in AI to date. 
+
+Interviewer 1: Great. And, and the workshop, I think, uh, is it the one you, uh, shares on, uh, on Lincoln? The workshop you were talking about? 
+
+Interviewee: Yes. Uh, Ali V was, uh, well, you have two types. The exploration, which is more strategic in the preparation, which is more technical and okay. At some point back, uh, a year, Ali V was doing all of them.
+
+Interviewee: But now, uh, we were, we are doing a lot of workshops and he's, uh, also transitioning in other roles. So, uh, the preparation, it's also the experts that, uh, lead it in on, on a technical site. So, Mario Debt and, uh, Alex. Okay, great, Thank you. 
+
+Interviewer 1: All right, so we'll start with a really general question. Uh, what are the main quality issues you have encountered with, uh, data model or system so far, or any, any you have 
+
+Interviewee: encountered?
+
+Interviewee: Uh, Okay, so my experience with, uh, Company 2, the data is, is messy, but it was known from the start. It's really data from engine and it comes from, uh, you know, all different systems and it, uh, it's very old as well, so you have engines that, that can be 66, 50, 60 years old. So yeah, that's a, that was a, a, a real, real challenge to, uh, To transform and prepare that data.
+
+Interviewee: I understood. And, uh, but the model worked pretty well on that, that they were kind of surprised how, how the, the model worked. Uh, well on that side, you, so you said data, uh, model and what output, Uh, system. 
+
+Interviewer 1: So the software system in general. 
+
+Interviewee: Uh, meaning that the entire pipeline infrastructure and stuff. Okay.
+
+Interviewee: Um, In that case, the, the, the, the, we developed our stuff, uh, on a lab environment because Company 2 was building the entire dev, QA, and PR environment. So it's still ongoing. We, uh, we were, we were stopped by that actually. So everything works in a lab environment, but it was not productized cuz they're not, the environments are not ready yet.
+
+Interviewee: So I don't know if it touches the quality, but, uh, it surely touched, influenced the quality of the project. 
+
+Interviewer 1: Yes, absolutely. So you, you mentioned that issues with the data, uh, and you said it was data coming from, uh, where, where, where 
+
+Interviewee: it coming from? Again? It's, it's actually. Uh, one big system that, uh, that is called track.
+
+Interviewee: It's an internal system, but I understood it's populated from different sources. So some stuff is, uh, automated, some is manually, uh, inserted, and it varies. So sometimes the, the record can stay for, can stay the same for one engine for, uh, many years. And sometimes it's, it's. It's, it varies a lot. A lot of empty fields.
+
+Interviewee: Yeah. Things like that. Okay. 
+
+Interviewer 1: And how did, did you, that you, did your team handle the issues with the 
+
+Interviewee: data? That I cannot, I cannot say, I cannot say how they solved it. I just, I, I know it was a challenge and it, yeah, it's a challenge. 
+
+Interviewer 1: Okay. Thank you. Um, let's see. Okay. Um, so I will ask a bunch of questions about data collection in general, and if you don't have experience once again, we'll just, uh, skip to the next question.
+
+Interviewer 1: Okay. So did you ever use a services of, uh, manual data collectors? So people that gen generated data. For, to train a model. And I guess, yes. You mentioned, you mentioned there were people manually entering data, uh, at 
+
+Interviewee: Company 2, right? Yep. That's what I understood, yes. So answer is yes. Okay. 
+
+Interviewer 1: Um,
+
+Interviewer 1: now I was going to follow up with, uh, with the question I asked you before, so, uh, sorry. I will move on to the next question. Uh, Yeah. Did your team ever measure the quality of your data and or try to improve it? So there were issue, So if there are issues in your data, they try to fix them and, uh, improve it?
+
+Interviewer 1: Yes. Yeah. Do you know how the, how they did it, which tool they use? No. Okay. 
+
+Interviewee: No experience on that. Okay. 
+
+Interviewer 1: Uh, is there any other data quality issue we missed that you consider relevant?
+
+Interviewee: Um,
+
+Interviewee: I'm thinking about,
+
+Interviewee: uh, no. 
+
+Interviewer 1: Okay. Thank you. Uh, now I will ask you some question about, uh, model evaluation. So to evaluate the model, uh, do you know how your team evaluate the quality of your models? are you? 
+
+Interviewee: Um, do I know, uh, do you, do you mean by the, uh, by measuring the, the outputs, the actual prediction or, um, data that gets out.
+
+Interviewee: Okay. So, yeah, that there are different ways to, to measure. I know about more about the KPIs, so, So the indicators. So, uh, against which we, we compare to a baseline, for example, because mm-hmm. in the end. That's, that's, that's where the, the value added of the project is. Right. But I know they use also, uh, performance indicators for the model itself to know, for example, uh, the number of false positives or false negatives that were, um, you know, that were found during different tests.
+
+Interviewee: Things like, Yeah. Okay. Yeah, go for that. Um, actually, I 
+
+Interviewer 2: was about to mention that for the quality you can consider anything 
+
+Interviewee: nonfunctional, if this is nonfunctional model 
+
+Interviewer 2: is working properly, but not, not inequality. Find way, for example, you can consider accuracy as 
+
+Interviewee: functional as a functional property in the you.
+
+Interviewer 2: Since with a low accuracy, you can't say that the system is not functional at all, but suppose that the quality, the the accuracy is fine, but for example, the system is not very robust. System is not explainable. The system cannot be maintained very well. They are quality issues. The system, for example, working, No anything nonfunctional, Yeah.
+
+Interviewer 2: Is working but not in the proper way. 
+
+Interviewee: That's understood. But so then a lot of stuff I think. Because we did not, uh, operationalize the, uh, you. The, the entire solution in the end, well, it will be done, but it's not done yet. So a lot can happen there, I guess in the, you know, the monitoring, the, uh, for example, they are working at, we have three data sources in the end, and, uh, they need to be, Automatically refreshed, and this is still ongoing.
+
+Interviewee: The, you know, the, the people at it, they need to figure out how they do it, but once they know how they do it, we need to implement it in the entire solution. And there, there's a risk that it breaks for sure, because, uh, it comes from the crm, you know, there's a lot of steps, uh, to get the data source right.
+
+Interviewee: So, 
+
+Interviewer 1: Okay. So yeah, but that sort, that need to be refreshed and the system for that to refresh, 
+
+Interviewee: uh, well that's not on our end. That's not within, Yeah, but that's, you know, you know how it's worked. The model, there's a lot, we use schedule and there's a lot of layers. So the, the raw data, the raw, I mean, this needs to be connected to, to the, the data sources.
+
+Interviewee: They need to figure out how to do it at the client's site. They still don't know. 
+
+Interviewer 1: Okay. Okay. So they did not have implemented a pipeline that it just, the data. Okay. I 
+
+Interviewee: see. Exactly. It's ongoing since, uh, nine months. Oh, big, big companies. That's, uh, takes a lot of time. 
+
+Interviewer 1: Yeah. Always. Mm-hmm. . All right. Thank you.
+
+Interviewer 1: Um. Have you ever assessed a quality of a machine learning model prediction with users of the system? So the people that will use what you are developing? 
+
+Interviewee: Say it again. 
+
+Interviewer 1: Can you repeat? Have you ever assessed a quality of a machine learning software system with the, with its users? So the one that will be using what you are building?
+
+Interviewee: Oh, um, we are doing a. Test with the project I'm talking about, um, with end users who are, uh, actually, um, salespeople. So yeah, they are, they are verifying the outputs actually. What, what, what are the outputs? They are leads. In the end, we try to predict the, the time when an engine will need a, a large, uh, maintenance, um, activity.
+
+Interviewee: And so that, You know, the, the sales people are looking at and the, they are now in the process of assessing if the prediction is good. Yeah. Okay. Call it a pilot. Okay. Yeah, the feedback is coming in. It's pretty, it's pretty good. It's pretty good. Where 
+
+Interviewer 1: are there, were there some quality issues they have mentioned or issues with your system at 
+
+Interviewee: all?
+
+Interviewee: It's really more issues. Uh, If you consider the entire system, then it's mostly, uh, it's mostly they have needs to have a. A lot of information in a, in a, in the dashboard, not, not really linked to the model itself, but how it connects to the information they need to work. So a lot of, uh, the, the data about the clients, for example, comes from the crm and it's not updated.
+
+Interviewee: It's, it's bad. And so it's really, it's related to their workflow, their, their process. But since our output is connected to that, they can. Make the link that, uh, the, the what, what the model gives them is not so helpful after all. So, Oh, okay. The lesson lessons learned is that it's very important how in the end, not only how the information, the, the model gives, how, how it's seen, but also what else is to be done with this information in order to make the.
+
+Interviewee: Their job. So that's, uh, if you talk about change management, it's very important. But quality, I don't know if you, if if it's within your real or the thing you want to assess, maybe 
+
+Interviewer 1: it is. No. Yeah, it is, it is interesting. And sometime from issues that are not quality issues that we find some quantitations Yeah.
+
+Interviewer 1: Feel free to talk about any issues. 
+
+Interviewee: Okay. You think of, So that's one . 
+
+Interviewer 1: Thank you. All right. Um, have you ever assessed a quality of a machine learning model with, um, subject matter experts? So these are, for example, people that your model will replace or they have the expertise to say, uh, this prediction is right, this prediction is false.
+
+Interviewer 1: Yes. And they can criticize. Yeah. 
+
+Interviewee: Yes, we do that. 
+
+Interviewer 1: Ok. Okay. In, in which scenario? 
+
+Interviewee: Well, the scenario that we're talking about here, uh, with company Z, me, Uh, so within the team there was, uh, some, there is someone from, um, what they call it, uh, strategic planning. And he knows, he knows, uh, What are the good, the, the right, uh, outputs?
+
+Interviewee: So we validated all, let's say, the samples we made with the model we validated to him before going to the pilot and the the real end users. 
+
+Interviewer 1: Okay. And what are the issues that he, he pointed out? 
+
+Interviewee: Um,
+
+Interviewee: No, no, not really issues. It was more a matter of, um, how to, uh, cause some, some engine families, so some products are not interested. Interesting. So there's a question of filtering the information. And also there are legal issues regarding the data. So we had to develop a filter. So this is more, this is not issues, uh, in terms of quality.
+
+Interviewee: It's really a matter of, uh, you know, precision and, uh, yeah, detailing the solution, I'd say. 
+
+Interviewer 1: Okay. And by detailing the solution, uh, what do you mean? 
+
+Interviewee: Filters. 
+
+Interviewer 1: Okay. A filter for your prior or after 
+
+Interviewee: your model. That was a big, a big question. So after in Indiana it was after. Okay, because we need to train. Yeah, go for it.
+
+Interviewee: The thing is, uh, is, is like a car dealer. Okay. They, they have their shops, but also there are other garage that are certified by the. With name by the oem. So they're kind of competitors, but it's the same company so they can use, we, we, in the end, we can use the data to train, but we cannot use it, uh, for the outputs afterwards.
+
+Interviewee: We need to get to, to filter some types of, uh, Evans from, from the data. Okay, I see. 
+
+Interviewer 1: Thank you. Um, All right. Um, have you encountered any other quality issues during the evaluation of some model? So when you say this model is good or bad, 
+
+Interviewee: uh, no. Don't have experience or that, Yeah, no worries. 
+
+Interviewer 1: Uh, alright, so we'll talk about model deployment, machine learning software system deployment question.
+
+Interviewer 1: Uh, so my first question is, how and where are your models?
+
+Interviewer 1: How and where, you mean are your models that deploy or your machine learning software system 
+
+Interviewee: deployed? You mean in the, in which system or in which, um, uh, location. 
+
+Interviewer 1: Uh, one example could be you say, we deploy our solution on AWS or Oh, or on-premise. 
+
+Interviewee: Yeah. Uh, it's always, uh, AWS. Azure or, uh, gcp. So we, Okay.
+
+Interviewer 1: Yeah. Um, what are the challenges that you, your team, have encountered during the deploy, during the deployment of a match software 
+
+Interviewee: system?
+
+Interviewee: Well, in that case, if we stick to the, to that, uh, project I've been, uh, talking about it's the, the environment not being ready and. Understand, understandably, because there's a lot, uh, there, there are other projects, AI projects ongoing. There's a lot of needs to, to have. For example, the data lake is, is huge.
+
+Interviewee: Uh, so yeah, that's a big, big problem. It's a big show stopper. Okay. Yeah. The, the infrastructure being being built as we, as we, uh, as we develop our, uh, our model. 
+
+Interviewer 1: Okay. Okay, So, so you don't, you do not always have the, the, the infrastructure ready to No. Deploy what you're building. I see. Exactly. Um, did you ever have a model that performed well locally, so on the computer of the data scientist, but once deployed, uh, didn't perform 
+
+Interviewee: so well?
+
+Interviewee: Uh, I did not see that cuz I don't have experience in the product. You say operationalize the solution? Yep. Not yet, yet. Mm-hmm. . 
+
+Interviewer 1: Nice. Have you encountered any other quality issue with your model or system during your deployment phase? Uh, no. Okay. Thank you. Um, I'm not sure if, um, this is more maintenance.
+
+Interviewer 1: Did, did you did some maintenance during the, um, Do you have experience in the maintaining machine ring software system? 
+
+Interviewee: Personally? No. Okay, thank 
+
+Interviewer 1: you. Um, let me ask question, did you ever have issue, did your team ever add issue with one of the following quality aspect? Uh, and if you dunno what it is, I can, uh, explain it.
+
+Interviewer 1: So, fairness, robustness, explainability, scalability, and privacy.
+
+Interviewee: Uh, only explainability is a good point. Yes. Explain. Well, it was not an issue, but, uh, it needs, uh, it needs to be, uh, For example, the, the model is, uh, is not difficult to understand. In the project I told you about, it's, uh, kind of a dish decision tree. Anyway, So when we explain that to the product owner with some visualization, we understood it, uh, really quickly.
+
+Interviewee: So yeah, that's, that's good. Okay. See, but we not dig, we did not dig deeper though, you know.
+
+Interviewee: So he just figured that yeah, the machine is learning from the data and we cannot really understand why exactly. It spits out the, that that output, but the, the, the thinking of how it works, that's, that's okay. 
+
+Interviewer 1: Okay. I see. And did you ever had a, a situation where you did not use a model that were, that was explainable and it was a problem?
+
+Interviewer 1: Uh, no. Okay, perfect. Thank you. Uh oh yeah. Privacy maybe. Um, so you mentioned earlier that you had a problem with, um, you, you put a filter at some point. Um, did, did you have any other, like, privacy 
+
+Interviewee: issues, But that's not privacy, that's, uh, confidentiality is different. Privacy is more the individuals, I think.
+
+Interviewee: Mm. 
+
+Interviewer 1: Well, we, we could go with, Yeah, go for it. 
+
+Interviewee: Yeah. I never worked with, uh, with, in a project where, uh, privacy was an issue. Okay. 
+
+Interviewer 1: Thank you. Uh, did you have AI project that took, took longer than expected? Uh, 
+
+Interviewee: yeah. That instance? Yes. Yeah. What, 
+
+Interviewer 1: what were the reasons. 
+
+Interviewee: The, the environment not being ready, uh, at the clients.
+
+Interviewee: And also the fact that it's, uh, it's a very complex environment to operate, to operationalize the, the model. Because the model in the lab, it works fine, works great. Uh, yeah, everything is fine in the lab, but, uh, the. The step to, uh, operation is, uh, quite, quite large. Quite high. Yeah. And 
+
+Interviewer 1: why is it like that?
+
+Interviewee: Complexity? Very complex environment. And I, I think, uh, there's also a lack of experience from the client. It's a big company, a a lot of needs, uh, experience. They don't have their waterfall. They, they're not agile. They don't have. Their employees are inexperienced, so they hire a bunch of consultants, a lot of people involved in a typical, uh, technical meeting.
+
+Interviewee: They're, uh, 20 people. So yeah, that's a complex environment. Yeah. Thank you. 
+
+Interviewer 1: Um, and in your opinion, what is the most person quality issue researchers should try to solve? 
+
+Interviewee: Researchers. Oof. I don't know. I'm really more in the, uh, project mechanics. Sorry. Can I help? No worries. Yeah. 
+
+Interviewer 1: Uh, do you have any other comment about the quality of systems,
+
+Interviewee: uh, systems regarding the models themselves know regarding the data?
+
+Interviewee: Um, well, I don't know enough about systems. I see. I, if I take the, the project manager point of view, I see a lot of time is needed to, to care about data sources, data preparation before you can even get to, uh, to model, right? So there's a lot of stuff there and. And after and afterwards as well. You can have, uh, you know, very good results with, uh, one or two or three models.
+
+Interviewee: Then yeah, you need to, The step to operationalize is, it's pretty large. I saw, I, I told it for for, for, for Company 2, but I see it in other projects from what I understand from my colleagues as well. It's, uh, 
+
+Interviewer 1: I see. All right. Uh, so that's all for the interview. That's it. So, yes, so thanks a lot, Interviewee. 
+
+Interviewee: I participate.
+
+Interviewee: My pleasure. I hope it help. I don't have a lot of experience. Uh, I'm really quite surprised about the complexity of, of ai actually, I've, I have a, a lot of experience in data, data analysis, uh, you know, analytics of whatever statistics. So I was really interested. That's why actually I, I have a good background in, in data, so I was interested to jump into, uh, so I changed career really completely a year ago to jump into the AI train.
+
+Interviewee: Uh, and I, I, I, I did not understand at first why, why it took so long to do , you know? But I don't understand now. Plus, if you add that Yeah, yeah, yeah. Go ahead there. I mean, yeah, 
+
+Interviewer 2: I just want to say that actually it is a valuable. 
+
+Interviewee: Yeah. Yeah. So surprised about the, the, the, the, the different, the various tools, the different, I mean, we have three major players, but underneath that you have a lot of different tools you can use for all of the steps.
+
+Interviewee: So that's, that's pretty tough. And so we developed a lot of stuff in, in Company 1, you know, uh, . And we, we chose, uh, We kind of standardize, uh, the tools we use, but we still need to, to, uh, comply or to, uh, adapt to what, uh, the clients have for infrastructure. If you, if you start from scratch, we can, we can really, um, properly support them or, uh, uh, give them like good, uh, advice, advise them.
+
+Interviewee: But otherwise you need to, for example, at mid. Did not participate very deeply with them, but I know they have a very complex kind of state of the art, but all the infrastructure, So they had a lot of, uh, of challenges to integrate within that. Uh, yeah. And I mean, you agree there's a lot of complexity in those systems.
+
+Interviewee: Yeah. Across it are 
+
+Interviewer 2: more complex. Actually, the problem is that if the system. Not complex. We don't need AI to process it if the 
+
+Interviewee: system is as well. Yeah, yeah. 
+
+Interviewer 2: If the system is simple, you can go for traditional algorithms, statistics, then you can solve your problem. But when it is non-deterministic, when it's complex, where there are many missed values, when there are very ambiguities, When usually you don't know what we are looking for.
+
+Interviewer 2: This is 
+
+Interviewee: the era of, Mm. That's it. That's, that's well, well said. Really. Yeah. And you see in the workshop the exploration workshops, we do the strategic workshops. People think you have all sorts of, all sorts of people, but many think that AI is magical, but the, the oversee that data analytics and the deterministic analysis before they, people are really not so far ahead in, in.
+
+Interviewee: Data or in, uh, let's say the, the digital space. Just know your data and, uh, you know, take decision based on data. You don't need to have AI to do that first. Right, exactly. Yeah. Mm-hmm. , there's a lot of education to make. Yeah. But now they, they, they know, uh, AI project cost a lot of money, so they think twice.
+
+Interviewee: No, there 
+
+Interviewer 2: is no magic familiar. They are. If you can use, you can benefit from your previous tools, just use them and have your results. But if you have something that cannot be solved you with, with the available tools, then you 
+
+Interviewee: need to go for a, Then you can have a look. Yes. Yeah, Yeah. All right. So maybe just backside.
+
+Interviewee: Thank you so much. 
+
+Interviewer 2: Thank 
+
+Interviewee: you for your time. Yes, sir. My pleasure. All right. Good. Good evening. Good evening. Bye bye 
+
+Interviewer 2: Bye. Thank you again.
+

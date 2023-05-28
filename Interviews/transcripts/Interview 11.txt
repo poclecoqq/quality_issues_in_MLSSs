@@ -1,0 +1,396 @@
+
+
+
+
+
+
+Interviewer 1: All right. Uh, so what we want to do in this, uh, in this research project is to develop a catalog of quality issues and machine learning software system.
+
+Interviewer 1: So what is a machine learning software system? It's any system, like software system, anything that has a machine learning component. Right. Uh, and a quality issue. Is there anything that if you compared two systems and you can say that one is better than the other, well this is a definition of quality and if you have an issue, quality issue, you can understand, uh, what it means.
+
+Interviewer 1: Yeah. Uh, so do you have any question on the topic of the interview? Yeah, sorry. 
+
+Interviewee: Uh, no, everything is clear. Okay, 
+
+Interviewer 1: super. Alright. Uh, so we will ask you about 20 question. Okay. All right. So to start, can you give us a little bit background on, uh, your current position? How much experience do you have in, in general or specific to mission learning?
+
+Interviewee: Yeah. Uh, I've been, uh, data scientist for almost three years now, and it's been, uh, one year and a few months since I started working here specifically, but this is a third company I worked to as a data.
+
+Interviewee: Okay. Thank 
+
+Interviewer 1: you. Uh, can you tell us what are the main quality issues you have encountered with your data model or system so far?
+
+Interviewee: Uh, I don't know. It's, it's always different. Mm
+
+Interviewee: hmm. I don't know. It's always different. I think, I think the, the, the main issue, and it's not really a, a real, like, it's not a software quality issue, but the real issue is often that the expectations are high and sometimes the data we have to work with, there's not enough, uh, link with the target variable, right?
+
+Interviewee: So the data generative process is not. Uh, most of it does not come from the data that, uh, the client or the boss would like to come from. So the most of the data generative process does not come from the, like what we work with as input data. So the results are often disappointing. Uh, often I'd say that's most of the project, but like, this is when you get, this is the main issue that we encount.
+
+Interviewee: Okay. It's not linked with quality per se, and often what is flagged as a quality issue, um, it is just, uh, it is just, uh, sometimes it's, there are a lot of issues at all growingly flagged as quality issue where it's just that you really don't have any signal to work with. So you can do whatever you want.
+
+Interviewee: You can, uh, do all the fancy things you. Um, you're not gonna get a lot of results. 
+
+Interviewer 1: Yeah. Okay, I see. Understand. Thank you. Um, so do you, do you use any of the following data, data collection techniques? Uh, so do you use, uh, did you ever use the services of some data collection? Uh, company. So anyone? Anyone that is ity man.
+
+
+
+Interviewee: Uh, no, I never use that. Okay. 
+
+Interviewer 1: Um, do you ever use external data such as public data set, uh, third party API or webs script data? 
+
+Interviewee: Yeah, so, uh, Skype data when you want to build a system is a nono usually, uh, because you know it's gonna break, uh, like very soon.
+
+Interviewee: So it's always gonna be something you will have to try to fix. Uh, but, uh, at mover we often buy. Um, to, uh, complement our data sets. For example, we buy, uh, material data, um, from, uh, third parties, uh, to, uh, augment our training data sets. 
+
+Interviewer 1: Okay. And did you ever encounter quality issues with, uh, this data? 
+
+Interviewee: Yeah.
+
+Interviewee: Well, the, like, even with the. Private, uh, even with the private firms, even when we buy, that says once in a while you have like, just APIs don't, don't return calls. So you have to make sure that your system is robust to that. But, uh, honestly, most of the issues come from, uh, when we try to use. Like, uh, either public data sets like, or when we use, try to use data sets that, that are not like fed, uh, in a regular way or a predictable way or like data sets that are scraped.
+
+Interviewee: So this is like cases when you have issues For sure. 
+
+Interviewer 1: Okay. And what do you do when you have these kind of issues?
+
+Interviewee: Well now we try now when we plan projects, so before, uh, it was like always like, uh, in a panic mode, try to find something, try to find a solution. Now I think everyone is more metro about it. So when we start a project, we don't include new data sets accepts when we are really sure that they're gonna come from a, a steady source.
+
+Interviewee: And we try to not add too much data because each time you add data to your model, You have to make sure that you're able to feed this model in a constant, in a consistent manner. So we just try to be very person with the data we include in the model. So this is the main solution we have. Okay. I 
+
+Interviewer 1: see.
+
+Interviewer 1: Thank you. Uh, did you ever use data generated by another system and this system? It can be ML based or not? Just 
+
+Interviewee: Yeah. What do you mean? Uh, like it's always gen. I can't see it. Like there's always a system that generates. Um, 
+
+Interviewer 1: you, you want an example? Okay. So for example, imagine, uh, the two previous, uh, data collection technique I mentioned, like external data.
+
+Interviewer 1: Yeah. Um, you are not consuming the data coming from another system. It's more you are getting the data set from someone else and training your model on it. So this is not generated by a system, or if the data has been manually written by. By someone. By someone, Yeah. That that's not, uh, generated by a system.
+
+Interviewer 1: So basically what we are asking, I would rephrase it. Yeah. Have you ever, um,
+
+Interviewer 1: yeah. Okay. Did you ever add the model that was deploying production, that use the stream of data of another system to make prediction? Uh, Is it 
+
+Interviewee: more clear? Yeah, well, uh, I don't know if it's gonna answer the question, but yeah. We work a lot with, uh, like in the manufacturing sector. So like we always have sensor data.
+
+Interviewee: I don't know if it, your question. Yeah, yeah, that's good. Okay. So well sensors data all the time. So yeah, we work a lot with that. Okay. And did you have any 
+
+Interviewer 1: issues, uh, with this type of data? 
+
+Interviewee: Uh, so far so good. Um, I have no, uh, big issue. Usually it's, uh, fairly steady, uh, because usually what we look for is pre precisely when it doesn't work.
+
+Interviewee: So if a sensor does not work and I detect it, then I did my job, right? So, uh, that's good. Uh, the size of that data can be challenging. You have to have consequent. Infrastructure to work with such data because, uh, sensor data be five seconds since the beginning of the, of the world. It's a big data set. So you have to, uh, yeah, you have to work ahead to plan ahead for that.
+
+Interviewer 1: Okay, Thank you. Um, yeah. Which data type have you work with? Uh, 
+
+Interviewee: I've worked, uh, a lot with time series. I worked with, uh, NLP data. I worked a bit with images, but really not a lot, Only a very small project. I worked with, uh, Tableau data. I worked with the in game. It was a very fun project on the League of Agenda data.
+
+Interviewee: So in game data sets, uh, yeah, I work with, uh, lot of. 
+
+Interviewer 1: Okay, great. And, uh, so you, you, you are going to see what's the next question. Have you ever encountered quality issue with the data with any of your data? You use any data? Or what are the 
+
+Interviewee: main quality issues you have encountered? Okay, so again, when it comes from a system, for example, in game data, there is not a lot of issues, right?
+
+Interviewee: And usually there's so much data that they doesn't, uh, it's not the end of the world. Um, I once worked in, um, like a, in a real estate. So this is a kind of places where a lot of data is handwritten or like a type by someone. So all the category names are inconsistent. Uh, all the one, you have the name of a city, it's never written the same way.
+
+Interviewee: Uh, so this, it takes a lot of time to correct this kind of, Uh, I worked with, um, how do you call that in the retail. So again, in retail, like the sellers, when they add like, uh, the, the characteristic by end of what they sold, it's never written the same way. So when you try to work with that, it's really hard to fix for that.
+
+Interviewee: Uh, time series,
+
+Interviewee: time series. There as always, like sometimes you have to make sure. Let's say you have a history data set. Well, you have to make sure that if I have the temperature for last Monday, that my data does not come from the day after, right? Because often you have like a Tuesday, they enter the data for Monday, the day before.
+
+Interviewee: So if I work with that, when I will start making predictions, I would, I would encounter issues that I did not. So, uh, yeah, my model is learning stuff that they should not be learning. So this something, some stuff you always have to keep in mind when you work with the time series. 
+
+Interviewer 1: Okay. And how do you end all this issue with the time series?
+
+Interviewer 1: Yeah. 
+
+Interviewee: Well, again, it's always plan planning ahead. It's always knowing, uh, what you're putting in your model at the beginning of the project. Making sure that like spending a lot of time into fetching like high quality. And Yeah, I know. Yeah. So you just, you really can't, uh, fix that afterwards. You have to plan for it.
+
+Interviewee: Okay, 
+
+Interviewer 1: perfect. Thanks. Um, have you ever measured the quality of your data and or tried to improve it?
+
+Interviewee: Well, uh, it's most of my job, like it's always looking at the quality of the input. Okay. And 
+
+Interviewer 1: how do you do it? Do you have any framework or tool to help you 
+
+Interviewee: with it? There's not a lot of, uh, tools that will work for every, uh, use case. So, uh,
+
+Interviewee: no. It's always, honestly, it's always different because you, you can, you can use a framework, but usually it's gonna be trivial. Uh, they will find trivial stuff. For example, there is no framework that will detect if the data, like the historic data was entered like one day after the events happened, right?
+
+Interviewee: That you can't just detect that. You have to know it. Um, there is no system that will tell you, oh, the sensor, the temperature is, uh, at zero because the sensor is off, or because there's something very wrong happening with the machine. Right? So this is not the kind of thing that a framework can can give for you.
+
+Interviewee: There, There's no relief framework that will tell you, like in advance, this API is gonna. Mess up. It just messes up. And you, when and when it happens, you try to fix it and beforehand you try to ensure that the input data is not corrupted. 
+
+Interviewer 1: Yeah, I see. Great G, great point. Thank you. And in some way you need to have external information to know what are the issues in your data set.
+
+Interviewee: Thank you. Yeah, yeah, exactly. Thanks. 
+
+Interviewer 1: Um, Yeah. Is there any other data qualities should be missed that you consider relevant?
+
+Interviewee: Well, right now, no, but I'm sure like after the call, I'll think of something, but right now, no. 
+
+Interviewer 1: Okay. Well if, if you ever had an idea, don't, don't hesitate to to send me a message or you can tell me during the call at any. So, all right, uh, so we talk a lot about data. Now we are going to move to the model.
+
+Interviewer 1: Um, so my first question is how do you evaluate the quality of your models? And, and, um, just little parenthesis as a reminder, uh, we do not only consider like accuracy furnace, uh, you know, if it is correct, but there is also other aspects such as furnace, robustness, expandability, uh, you name it. 
+
+Interviewee: Yeah. Well, uh, to me, my main indicator is if the user is happy.
+
+Interviewee: That's it. If the user is happy, and what I track is, uh, if the user uses it, right, if it's not used, then it's not high quality. If it's used repeatedly by the same users, then I know it's high quality. To me, this is what I'm achieving. I'm trying to have usage for the systems I build for the software that I build.
+
+Interviewee: So even if it's ml, if it's non ml, to me it's the same thing. It's a software. 
+
+Interviewer 1: Yeah. Thank you. That's a great answer. And we are interested into your, your, uh, from, from your point of view, so it's perfect. Um, did you ever use ex existing benchmark models for quality aspect to evaluate your 
+
+Interviewee: model? You, you what?
+
+Interviewee: You mean like a model that's gonna be like, um,
+
+Interviewee: You mean like a generic model to see like how it works with it to come have a comparison or like, I don't know what you mean by benchmark model. Uh, so 
+
+Interviewer 1: imagine you wanna evaluate a model, uh, and use a, you compare it to another model to see how good days your model Is this something you, you do? So, 
+
+Interviewee: Yeah, we do it all the time.
+
+Interviewee: Yeah. Okay. 
+
+Interviewer 1: Okay. And what are the issues you encounter? You're the first one to say Yes. And what are the issues you encounter with, uh, with that?
+
+Interviewee: Well, the main issue, it's the main, Oh, you mean with the benchmark model? The main issue. So the main issue is that people don't do it. So my dream is that we would have like a, I know very well I, I'm quite like, I'm more specialized in time series, so I, I can speak with more confidence about time series.
+
+Interviewee: So, uh, in time series we have a measure which we call the mace. So it is just we compare your model, how it performs compared to like, share luck or how like a very bad matter would, uh, would. So if every, if everybody does that, then it's much easier to compare across experiments, across projects, how well your project is going.
+
+Interviewee: It's not just about how well you're doing, but how like feasible is the problem you're trying to solve. So having an idea about like your model performance and the predictability of the series, to me it's very important. But you're right, it's not like, uh, we have a lot of pressure to deliver quick. So often we just go with the model.
+
+Interviewee: We plan and that's it. I, I just say that the main issues, that's not like a more standard practice. 
+
+Interviewer 1: Yeah. I see. Thank. Um, have you ever assessed a quality of ML model prediction with the user of your system? Yeah. 
+
+Interviewee: Yeah. That, that's, uh, to means the main indicator of, uh, of if it works or not. Okay. 
+
+Interviewer 1: And how have you proceeded?
+
+Interviewer 1: Well, 
+
+Interviewee: when you deploy it as an api, if the person features your api, Good if he features it once and then never again, not so good. So that's, uh, I think that's the main way to, to know, because if you just ask, he's gonna say, Oh yeah, it's very awesome. I love your work. But, uh, is it using it repeatedly? It's just with the usage data, like automatically that you automatically put in the database and then you can have a look.
+
+Interviewee: Okay. And 
+
+Interviewer 1: have you discovered quality issues with, with your. When, when you access your system with a user? Yeah. 
+
+Interviewee: Yeah. It's, it's usually, uh, with that, but, uh, it usually with, uh, with that, that you can detect either, often the model will make trivial predictions, so it'll predict stuff that doesn't have a lot of value to the user.
+
+Interviewee: Um, to me, well, it's not exactly a quality issue, but to me it's the most like, It's an issue that is, uh, very, very frequent. Um, it can tell you that it doesn't detect the right thing. A lot of false positive, for example, and then the ME system to detect a lot of things that are not anomalous. But then, but then it's like you see your usage data, it's only used one and never again.
+
+Interviewee: Then you go, you need to go ask your users why. And so this is how you really figure out like what the issue. So when you ask the user, it will tell you, Oh yeah, but. It tells me this, but by experience I know that it's not true. So I don't trust the system. I see. 
+
+Interviewer 1: Thank you. Um, have you encountered any other quality issue during the evaluation of your model?
+
+Interviewee: No. Again, if, if it's used by the user repeatedly, to me it's mention I complete. Perfect. Thank you. 
+
+Interviewer 1: Uh, so now model deployment. Um, so how, and where do you, are your models deploy? 
+
+Interviewee: Yeah, so there are two ways we deploy model, right? Two main ways either, right? It's always the same, is either by batch or online prediction.
+
+Interviewee: So when it's, when you deploy, you make batch predictions. We often do it with the, you know, with cloud providers, there's always like cloud function services called Lambda function. Google Clouds cloud function. So this is perfect because they will manage the whole API thing. So, uh, so you just have like to, to, they will deploy it for you.
+
+Interviewee: So we send our projects our year, usually short with the, um, With clients that don't have a big like dev, DevOps expertise, these like, uh, things, platform as a service or. Very, very useful for us because they're super easy to use, super quick to implement. Uh, sometimes, uh, they, we need to have more something that looks like a, well, we need an API for like online predictions or like computations that we need to make over and over, or they need to have a lot of parameters in a query.
+
+Interviewee: So then we deploy with, uh, as an.
+
+Interviewee: Okay. 
+
+Interviewer 1: Super Great. And did you ever encounter the issue when deploying, uh, using the London function? 
+
+Interviewee: No, man, it works, uh, super well. Yeah, there's always issue. Whatever the software, when you press play, everything breaks the first time, that's for sure. But, uh, the deployment itself, it's very well managed.
+
+Interviewee: Okay, super. 
+
+Interviewer 1: Uh, what are the challenges that you encounter u usually when you deploy a model or a machine learning software system in general? 
+
+Interviewee: Well, at the beginning of my career, deployment was always a pain. Um, because a lot of times data scientists, they didn't sell themselves as a software engineers so often.
+
+Interviewee: Uh, I had the mentality, well, not me, but like the whole teams in where we were developing. It was just like, data scientists, do what you want, Give us, give the code to engineer. They will make the software, right? So you just do your Python thing and then we take it and we make it proper software with that.
+
+Interviewee: So this always caused issues, uh, because, uh, when you ship code, you don't have the, the control anymore on your deliverable. So you really don't know it's gonna be used, always gonna be implemented in the end. So you really. They really cause like big issues when deploying, not just because the person doesn't know how to deploy it, but because you never really see the finished project, so you cannot adjust.
+
+Interviewee: Now that we, I think, have much better practices, uh, we have very, uh, very, it's very hard to fail now when we deploy. Okay. Thank you. Sorry for the, the warning. I'm the, but to me, like no word as meaning. So 
+
+Interviewer 1: No, no worries. It's just funny because , I can, I can remove it if you want, but, uh, we are recording the interview because we will have a transcript and the transcript will be publicly.
+
+Interviewer 1: Okay. But they will know. I'd like to 
+
+Interviewee: have the, I'd like to have the, the transcript. Okay. , it's gonna be, I just want to see that. Okay. Go on. 
+
+Interviewer 1: All right. Um, uh, so thank you. Uh, did you ever add a model that performed well locally but poorly amongst deploy? 
+
+Interviewee: Yeah, all the time. But, uh, again, now that we are really more wary about the data we put in from day one, uh, it makes a big difference.
+
+Interviewee: So, uh, less and less we're, we're getting good actually. Okay. And what, 
+
+Interviewer 1: what causes problem? 
+
+Interviewee: Well, again, I say it multiple times because like, uh, this is like, uh, issues that come up all the time, but when you have corrected data, corrected historical data, your model is not gonna perform well out of sample.
+
+Interviewee: Um, often when we don't have a lot of signal in the data, we tend to do a bit too much. So we tend to overfit, uh, on the training data. So again, it's not good, but more and more, uh, we try to avoid doing, uh, using models that are like too complex and that tend to overfit to favor, uh, very, very, as models that are as simple as possible that are not even considered.
+
+Interviewee: Amen. But, uh, since accuracy is not. Usually a little bit of accuracy is good, but models that fail big like that do big mistakes, big of over fitting mistakes, like they can like cost you the project, but like low accuracy is really an issue. It's usually small gains and accuracy have a big impact in the business.
+
+Interviewee: Or again, it always depends. Uh, so now, yeah, we are more. Data that comes in quality of the data that comes in. And we tend to stay away from architecture that over fit, that we know that will tend to over fit. Okay. Perfect. Thanks. 
+
+Interviewer 1: Um, have you ever, uh, sorry. Have you encountered any other quality issues, uh, with your model or system when deploying machine learning software 
+
+Interviewee: system when deploying a.
+
+Interviewee: Well, I don't know if I said that, but I think now it's related to, uh, we tend to only see the, the issues that happen right now. Wait, let me see, let me see. The main issues are not like, uh, when deploying, it's not machine learning related. It's software engineering related. So it's just we need to develop when in my company and in all the companies where we need to develop very quickly.
+
+Interviewee: So we always make like you. Usual software engineering, like, Oh, usual coding mistakes. So when we go live, when we do our first batches, the pipelines break, so we have two, like debugging and everything. It's mostly debugging issues, but to me it's um, you know, it's software issues, not deployment issues. I don't know if it makes sense to me.
+
+Interviewee: It's not like they have up person. 
+
+Interviewer 1: Okay. So it, it has nothing to do with the fact that you have a learning component. It's purely 
+
+Interviewee: software engineer. Yeah, it's mostly software engineering at the deployment side. Okay, 
+
+Interviewer 1: perfect. Thank you. Uh, all right, so we talk about deployment. Now we will move on to maintenance.
+
+Interviewer 1: Um, how do you ensure that the quality of master learning software system does not decrease, Uh, through time.
+
+Interviewee: Well, from day one, you need to have an idea of how you're gonna retrain how is going. The data is gonna continuously be available for retraining.
+
+Interviewee: Again, avoiding overfit. And when I'm in a project, I tried to, from day one, this is something I did not say, but I could have said that in previous questions too. From day one in a project, I tried to sell the bi part of the machine learning more than the machine model, uh, learning model per se, right? So first thing I do like, there was nothing.
+
+Interviewee: Let's say I do a feature engineering part in my work. It's always linked to a bi part, and I always want to ship bi uh, stuff to the user so I can, So I give it, um, uh, so I can give the, the, the client or the user value early with the BI tools. And if I see that there is no signal. Then it's something we can like pull the plug like with on the predictive system.
+
+Interviewee: We can, and we're able to say we are not gonna do a machine learning model now. So most of the issues regarding like quality, like when you're on, is that you
+
+Interviewee: is when you are forced to do a machine learning model or when you commit to do a machine learning model, no matter what the data's gonna look like. No matter if you have a signal in your data. So if, and many people they get into this situation, if they don't ship the machine learning model data because they sold that they will lose a client or they will lose their job because their job is shipping the, making the model.
+
+Interviewee: So this is the worst. You spend six months, uh, overfitting your training data because you need to overfit the training data to keep your job or your. And when you go live, nothing works anymore. So to me, the, the best way to, to have robust quality is to make the model that you have enough signal to have, like something, uh, you have enough signal in your input data.
+
+Interviewee: So the, the model learns something general, right? They can be generalized to new testing data. So, You see, it's not, it's not like hyper parameter stuff. It's not like a, it's not like, I don't know, model architecture stuff. Like the essential is really before model architecture, before, like hyper proprietor stuff, before em, all these things, if you do, don't do the essential before, uh, you put, uh, you put your 
+
+Interviewer 1: project at.
+
+Interviewer 1: I see. That's a really good point. Uh, so you mentioned that you use BI tools. What are they? 
+
+Interviewee: Oh, no, it always depends, but, uh, um, the, the BI tool that I use the most is, uh, Plotly Dash. But, uh, if the user is already using a Power bi, you use Par bi. If you uses W, he uses W. But this is because I'm in the consulting job.
+
+Interviewee: So I always try to go close to the user, uh, or if, uh, they're making a web app or you are making a web app, it just, any frontend, uh, any, uh, frontend framework to do like a dashboard works too. 
+
+Interviewer 1: Okay. So if I understand correctly, uh, what you mean is you, you use data visualization tool to see if there's a.
+
+Interviewer 1: Is it correct or 
+
+Interviewee: it's not exactly. If there's a singer, it's just
+
+Interviewee: whenever, like, okay, let's say to make a model, I need to do feature engineering, right? So for that I need to see like the distribution of the data, but I want to avoid is, uh, making a plot for. I want to avoid, uh, making plots in a Jupyter Notebook because if I make plots in a Jupyter Notebook, I'm gonna see it.
+
+Interviewee: No one else gonna see it, no one else is gonna consume it. So all the time I put it's quite long. Making plus, even when you're very used to it, it's always takes time. So what I really want to avoid is wasting my time as a developer to, uh, put, to make plus only for me. So I will always try to find a creative.
+
+Interviewee: To make, um, deliverable out of, out of it. So if I need to see something in the data, probably the user needs to see it too. And if maybe the user is just the client that's gonna maintain it, but if the client needs to maintain it, even the client, even if it's developers, if they're, they won't look at Jupyter Notebook, They, they will want like something more like, um, let's say something more interesting like that, a better.
+
+Interviewee: Um, so, uh, it give be better ux more precisely. So, uh, I, I always try to, to give that to, um, Iris, try to, to apply that. So it can be in Tableau, it can be, uh, with React, it can be with Plastic Dash. It can be that on the end is just gonna be a strategy for the project, but the, the essential is the same. Okay, 
+
+Interviewer 1: so, so you use any tool, but, but to, to show that there is no signal.
+
+Interviewer 1: Um, how do you proceed? Did you look at the data or, um, to see if 
+
+Interviewee: there is no signal?
+
+Interviewee: Well, a quick model could tell you, but uh, its just putting me, I don't really like to say that, but it's really putting your scientist. And look at the signal and
+
+Interviewee: you know, you have no signal. Uh, it's hard to define the absence of single, but when you see it, you know it. Right? It's like, uh, I don't know who said that about pornography, but I don't know how to define it. But when I see it, I know what that it is pornography, but it's the same thing. Like you try to, for example, when you, when you're using, uh, when you're under manufacturing and you want to, to know if you can predict, predict, that machine will break based on like all these sensors data.
+
+Interviewee: You try to have like examples of moments when things break and you try to look at segments of like sensor data. But if you never see anything, If there is nothing like that could predict it like that, the human could see. If you don't see it by by the eye, usually you won't go very far. But it it, it always depends.
+
+Interviewee: It always depends. Uh, in time series, when you don't see any seasonality, you can add as many, uh, weather data. It's not gonna cut it. So it always depends. 
+
+Interviewer 1: Super interesting. Thanks. Um, so we were in model maintenance. I will continue with some question related to model maintenance. Um, have you ever encountered issue with the data during the maintenance of a model?
+
+Interviewer 1: So the data source themselves, 
+
+Interviewee: When do you begin the modern maintenance and where does it end? What is, 
+
+Interviewer 1: Yeah, so, so when your model is deploying production Yeah. Uh, that, that's model, you want to maintain your machine learning software system mm-hmm. . Yeah. That, that's, that's the moment. And you receive data, uh, to do 
+
+Interviewee: prediction.
+
+Interviewee: Uh, well again, if you do your job at the before and you really are wary with the data that you put in, you should be fine. All right. 
+
+Interviewer 1: Uh, have you ever encountered issue with the model during the maintenance of the ME or mix software system 
+
+Interviewee: and, um, yeah. Yeah. So far I did not have any issue, but one of the reason is that we don't put a lot of models in production.
+
+Interviewee: Usually as a consultant, I, I have the client do the first iteration and usually they say, Alright, we're good. And they, and they go and usually we train the data scientists to, to do the maintenance. So I don't often see, uh uh, the mainten. Okay, perfect. Thank 
+
+Interviewer 1: you. Uh, so that's it. And we have a bunch of, well, we have two or three.
+
+Interviewer 1: Last question. Um, so did you ever add issue with, with one of the following aspect, furnace robustness, explainability, scalability, or privacy? 
+
+Interviewee: Okay, let's do them in order. So, fairness, Fairness, fairness. Fairness. Let me,
+
+Interviewee: Not in my, not, uh, as I, not from what I remember. Second. What's that? Re robustness.
+
+Interviewee: Personally, no, not too much. I was lucky not to have too many, like, uh, big, uh, like, like big, very projects that can go very wrong. I'm quite lucky. So. Right. Perfect. 
+
+Interviewer 1: Uh, the next one was explain explainability.
+
+Interviewee: Well, we all have issues with explainability because, uh, but because with machine learning models, you don't really.
+
+Interviewee: It depends what you expect from your models, right? If you expect to understand something from your deepening model, like for example, a shop, uh, you have done gonna have a hard time because, uh, shop does not work exactly how we want it to work. And it, it's kind of sad because, uh, we kind of needed to justify like that our systems like really work the way we say they work.
+
+Interviewee: Uh, so I think in general, like people use shelf explainability for most of their models and in general it does not always like for deep bringing it, it's not very reliable. Um, there are very good papers, uh, that are, that have been written about that, uh, I don't remember the the company, but there's a company that, uh, there are searchers from, um, a company that made the doctor, that made the ML tools and explainable tools that really showed how like shop, even if your mold does not really take one feature into account, if it's correlated with the feature it takes into.
+
+Interviewee: It will tend to say that it took it to make up the first feature, even if it did not. So we all have, uh, problem in general, uh, because of that. I see. 
+
+Interviewer 1: Thank you. And the last one was privacy.
+
+Interviewee: And I lost your voice, so No, no. Skip all. 
+
+Interviewer 1: Is it still? Yeah, 
+
+Interviewee: it's still recording. Perfect. Okay. So privacy. No, I never had, uh, any, uh, issues with that. Usually all the, well, I always have like anonymized data I, or machine data. Uh, so the machine doesn't really care that I know if it's, uh, over. Right. So, so far, so good.
+
+Interviewee: All right, great. Thank you. 
+
+Interviewer 1: And, um, in your opinion, uh, in your opinion, what is the most pressing quality issue? Researchers should try 
+
+Interviewee: to, Oh wait, sorry. I said no, but I, the, the project where I have big privacy issues, but, um, uh, but that was, this is the only, Okay. I, I have prohibition issues with one of my project, uh, but.
+
+Interviewee: It, it's not really an issue, but it's just something that breaks us into accessing data. But as a consultant, I'm, uh, this is a flag that I always raise that, uh, the client, what he wants to use as data is very, very, like, is very sensitive data. So, uh, to him is gonna be, is, uh, biggest challenge in developing his startup because he wants to base his, uh, product on exploiting this.
+
+Interviewee: And an we always ask the permission, but uh, you know, it's always legally and when ask them the permission, but the permission would be hard to get. 
+
+Interviewer 1: Okay. So, so getting the permission from the user to use their personal data, is it, would that been difficult to get? Okay. 
+
+Interviewee: Yeah, it's more that, but it's never, like, I never, I have ever been close into a situation where I had access to data.
+
+Interviewee: I should not have access or I had a data leak and never happened. Okay. Uh, okay. 
+
+Interviewer 1: I see. I see. So, okay, perfect. Uh, so the last question, well before last question. In your opinion, what is the most person quality issue, uh, researchers should try to solve?
+
+Interviewee: Yeah, again, never put yourself in a position where you have to ship a model no matter what. Again, because you're gonna find previous correlations, you're gonna overfit training data. You're gonna be paid to overfit training data, so you'll have fun for, uh, six months at your job, and then it's gonna be a pain you have to leave, So at some point, because your system is just not gonna work in the real world.
+
+Interviewee: So make sure to always manage expectations. And don't build, um, don't, uh, promise a machine learning model when there's just no link between X and y, because often yeah. I see. So 
+
+Interviewer 1: having a tool to, to see if the data is usable, uh, will be 
+
+Interviewee: great. Yeah. Uh, a good, well, there, there are tools already, but, uh, like having like many four people maybe who maybe don't want.
+
+Interviewee: The time, Uh, maybe, uh, just having the tool, I think it's very like specific to the domain. For example, the tool will not be the same for a time series and it will be for like, uh, image analysis or nlp. But again, we're for a time series that I know quite well. Having a tool that can tell you like, and it's super easy, already exists as a like Python packages here and there that will tell you how predictable your series are.
+
+Interviewee: Um, what you can expect from your models. Uh, to me it's gonna save you, Uh, it's gonna save a lot of point and it's not a vendor tool, but try like, explain to the data. Well, I think most data scientists know this, but, uh, making sure that data scientists know that they cannot predict everything and there is no magic as.
+
+Interviewee: When there is no signal, there's no model. That's it. You don't build the model. I think it's an education that needs to be done because many people suffer for a long time because of that. 
+
+Interviewer 1: I see, I see. Thank you. All right, and do you have any other comment about the quality of ML systems? No. No, no. No 
+
+Interviewee: comment.
+
+Interviewee: Think, uh, they are as systems. 
+
+Interviewer 1: All right. Uh, I think we can stop the record. 
+
+Interviewee: All right, uh, I can click on the stop recording.
+
