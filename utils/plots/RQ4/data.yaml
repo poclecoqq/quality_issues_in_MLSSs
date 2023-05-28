@@ -1,4 +1,4 @@
-quality-dimensions:
+quality-aspects:
   Data representativeness: 11
   Data traceability: 1
   Data accuracy and precision: 13
@@ -8,3 +8,8 @@ quality-dimensions:
   Labels consistency: 3
   Labels accuracy: 9
   Absence of Annotation bias: 2
+quality-dimensions:
+  Data completeness: 16
+  Data clarity: 9
+  Data uniqueness: 8
+  Data validity: 6
