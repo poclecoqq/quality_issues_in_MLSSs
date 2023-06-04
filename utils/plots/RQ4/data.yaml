@@ -7,7 +7,7 @@ quality-aspects:
   Data integrity: 1
   Labels consistency: 3
   Labels accuracy: 9
-  Absence of Annotation bias: 2
+  # Absence of Annotation bias: 2
 quality-dimensions:
   Data completeness: 16
   Data clarity: 9
