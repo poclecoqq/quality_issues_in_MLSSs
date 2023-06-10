@@ -10,3 +10,6 @@ This folder holds the interview guide used during the pilot of our study (under 
 ## `transcripts`
 This folder holds the transcripts in a text format (`.txt`).
 
+## `questionnaire`
+This folder contains the questionnaire.
+
